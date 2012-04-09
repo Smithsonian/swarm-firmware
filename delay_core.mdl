@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.21"
+    ComputedModelVersion    "1.23"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,9 +25,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Apr  9 13:52:34 2012"
-  RTWModifiedTimeStamp	  255871771
-  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  LastModifiedDate	  "Mon Apr  9 15:06:51 2012"
+  RTWModifiedTimeStamp	  255884673
+  ModelVersionFormat	  "1.%<AutoIncrement:23>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -718,7 +718,7 @@ Model {
   }
   System {
     Name		    "delay_core"
-    Location		    [2768, 72, 3767, 1090]
+    Location		    [713, 74, 1712, 1092]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1415,7 +1415,7 @@ Model {
       infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx "
       "fixed point type.<br><br>Hardware notes:  In hardware these blocks become top level input ports."
       arith_type	      "Unsigned"
-      n_bits		      "13"
+      n_bits		      "15"
       bin_pt		      "0"
       quantization	      "Round  (unbiased: +/- Inf)"
       overflow		      "Saturate"
@@ -1476,7 +1476,7 @@ Model {
       MaskIconRotate	      "none"
       MaskPortRotate	      "default"
       MaskIconUnits	      "autoscale"
-      MaskValueString	      "8192|4|4|Dual Port"
+      MaskValueString	      "32768|4|4|Dual Port"
       System {
 	Name			"delay_wideband_prog"
 	Location		[2257, 160, 3508, 1056]
@@ -1661,7 +1661,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1700,7 +1700,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1739,7 +1739,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1778,7 +1778,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1817,7 +1817,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1856,7 +1856,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1895,7 +1895,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1934,7 +1934,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -1973,7 +1973,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2012,7 +2012,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2051,7 +2051,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2090,7 +2090,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2129,7 +2129,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2168,7 +2168,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -2207,7 +2207,7 @@ Model {
 	  latency		  "0"
 	  precision		  "Full"
 	  arith_type		  "Unsigned"
-	  n_bits		  "9"
+	  n_bits		  "11"
 	  bin_pt		  "0"
 	  quantization		  "Truncate"
 	  overflow		  "Wrap"
@@ -3660,7 +3660,7 @@ Model {
 	  Name			  "barrel_switcher"
 	  SID			  153
 	  Ports			  [18, 17]
-	  Position		  [1055, 289, 1145, 641]
+	  Position		  [1055, 277, 1145, 623]
 	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
 	  AttributesFormatString  "n_inputs=4"
 	  AncestorBlock		  "casper_library_reorder/barrel_switcher"
@@ -7748,7 +7748,7 @@ Model {
 	  infoedit		  "Extracts a given range of bits from each input sample and presents it at the output.  The output type "
 	  "is ordinarily unsigned with binary point at zero, but can be Boolean when the slice is one bit wide.<br><br>Hardwar"
 	  "e notes: In hardware this block costs nothing."
-	  nbits			  "9"
+	  nbits			  "11"
 	  boolean_output	  off
 	  mode			  "Lower Bit Location + Width"
 	  bit1			  "0"
@@ -7821,7 +7821,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7858,7 +7858,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7878,7 +7878,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7898,7 +7898,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7918,7 +7918,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7938,7 +7938,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7958,7 +7958,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7978,7 +7978,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -7998,7 +7998,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8018,7 +8018,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8038,7 +8038,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8058,7 +8058,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8078,7 +8078,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8098,7 +8098,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8118,7 +8118,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8138,7 +8138,7 @@ Model {
 	  RTWMemSecDataConstants  "Inherit from model"
 	  RTWMemSecDataInternal	  "Inherit from model"
 	  RTWMemSecDataParameters "Inherit from model"
-	  ram_bits		  "9"
+	  ram_bits		  "11"
 	  bram_latency		  "4"
 	}
 	Block {
@@ -8523,28 +8523,28 @@ Model {
 	Line {
 	  SrcBlock		  "sync_delay"
 	  SrcPort		  1
-	  Points		  [695, 0]
+	  Points		  [135, 0; 0, -215; 560, 0]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  1
-	  Points		  [25, 0; 0, 30]
+	  Points		  [25, 0; 0, 40]
 	  DstBlock		  "sync_out"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  17
-	  Points		  [25, 0; 0, -240]
+	  Points		  [25, 0; 0, -230]
 	  DstBlock		  "data_out1"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "delay_dp"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, 350]
+	  Points		  [145, 0; 0, 335]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  18
 	}
@@ -8635,7 +8635,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_sel"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -45]
+	  Points		  [145, 0; 0, -60]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  1
 	}
@@ -8679,7 +8679,7 @@ Model {
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  2
-	  Points		  [15, 0; 0, 50; 85, 0; 0, 1195; -50, 0]
+	  Points		  [15, 0; 0, 60; 85, 0; 0, 1195; -50, 0]
 	  DstBlock		  "data_out16"
 	  DstPort		  1
 	}
@@ -8723,7 +8723,7 @@ Model {
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  3
-	  Points		  [45, 0; 0, 1155]
+	  Points		  [45, 0; 0, 1165]
 	  DstBlock		  "data_out15"
 	  DstPort		  1
 	}
@@ -8767,7 +8767,7 @@ Model {
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  4
-	  Points		  [45, 0; 0, 1055]
+	  Points		  [45, 0; 0, 1065]
 	  DstBlock		  "data_out14"
 	  DstPort		  1
 	}
@@ -8804,14 +8804,14 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp4"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -70]
+	  Points		  [145, 0; 0, -85]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  14
 	}
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  5
-	  Points		  [45, 0; 0, 955]
+	  Points		  [45, 0; 0, 965]
 	  DstBlock		  "data_out13"
 	  DstPort		  1
 	}
@@ -8848,7 +8848,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp5"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -170]
+	  Points		  [145, 0; 0, -185]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  13
 	}
@@ -8892,7 +8892,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp6"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -270]
+	  Points		  [145, 0; 0, -285]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  12
 	}
@@ -8936,7 +8936,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp7"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -370]
+	  Points		  [145, 0; 0, -385]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  11
 	}
@@ -8980,7 +8980,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp8"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -470]
+	  Points		  [145, 0; 0, -485]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  10
 	}
@@ -9024,7 +9024,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp9"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -570]
+	  Points		  [145, 0; 0, -585]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  9
 	}
@@ -9068,7 +9068,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp10"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -670]
+	  Points		  [145, 0; 0, -685]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  8
 	}
@@ -9112,7 +9112,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp11"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -770]
+	  Points		  [145, 0; 0, -785]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  7
 	}
@@ -9156,7 +9156,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp12"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -870]
+	  Points		  [145, 0; 0, -885]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  6
 	}
@@ -9200,7 +9200,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp13"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -970]
+	  Points		  [145, 0; 0, -985]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  5
 	}
@@ -9244,7 +9244,7 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp14"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -1070]
+	  Points		  [145, 0; 0, -1085]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  4
 	}
@@ -9288,14 +9288,14 @@ Model {
 	Line {
 	  SrcBlock		  "delay_dp15"
 	  SrcPort		  1
-	  Points		  [145, 0; 0, -1170]
+	  Points		  [145, 0; 0, -1185]
 	  DstBlock		  "barrel_switcher"
 	  DstPort		  3
 	}
 	Line {
 	  SrcBlock		  "barrel_switcher"
 	  SrcPort		  16
-	  Points		  [45, 0; 0, -145]
+	  Points		  [45, 0; 0, -135]
 	  DstBlock		  "data_out2"
 	  DstPort		  1
 	}
@@ -11977,19 +11977,19 @@ MatData {
   DataRecord {
     Tag			    DataTag1
     Data		    "  %)30     .    < 0   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ ''O7P0.    X ,   "
-    "8    (     @         %    \"     $    !     0         %  0 #@    $   !&    9&5F875L=',       !M87A?9&5L87D      &Y"
-    "?:6YP=71S7V)I=', 8G)A;5]L871E;F-Y  !B<F%M7W1Y<&4         #@   % \"   &    \"     $         !0    @    !    \"     "
-    "$         #@   $     &    \"     0         !0    @    !    \"0    $         $     D   !M87A?9&5L87D         #@   #"
-    "@    &    \"     8         !0    @    !     0    $         \"0    @           \"00 X   !     !@    @    $         "
-    " 4    (     0    T    !         !     -    ;E]I;G!U='-?8FET<P    X    X    !@    @    &          4    (     0    $"
-    "    !          D    (             $ .    0     8    (    !          %    \"     $    ,     0         0    #    &)R"
-    "86U?;&%T96YC>0     .    .     8    (    !@         %    \"     $    !     0         )    \"             ! #@   $  "
-    "   &    \"     0         !0    @    !    \"0    $         $     D   !B<F%M7W1Y<&4         #@   $     &    \"     0"
-    "         !0    @    !    \"0    $         $     D   !$=6%L(%!O<G0         #@   #@    &    \"     8         !0    @"
-    "    !     0    $         \"0    @           # 0 X    X    !@    @    &          4    (     0    $    !          D "
-    "   (            $$ .    .     8    (    !@         %    \"     $    !     0         )    \"            !! #@   $  "
-    "   &    \"     0         !0    @    !    \"0    $         $     D   !$=6%L(%!O<G0         "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ -.X\\0<.    X ,  "
+    " 8    (     @         %    \"     $    !     0         %  0 #@    $   !&    9&5F875L=',       !M87A?9&5L87D      &"
+    "Y?:6YP=71S7V)I=', 8G)A;5]L871E;F-Y  !B<F%M7W1Y<&4         #@   % \"   &    \"     $         !0    @    !    \"    "
+    " $         #@   $     &    \"     0         !0    @    !    \"0    $         $     D   !M87A?9&5L87D         #@   "
+    "#@    &    \"     8         !0    @    !     0    $         \"0    @           \"00 X   !     !@    @    $        "
+    "  4    (     0    T    !         !     -    ;E]I;G!U='-?8FET<P    X    X    !@    @    &          4    (     0    "
+    "$    !          D    (             $ .    0     8    (    !          %    \"     $    ,     0         0    #    &)"
+    "R86U?;&%T96YC>0     .    .     8    (    !@         %    \"     $    !     0         )    \"             ! #@   $ "
+    "    &    \"     0         !0    @    !    \"0    $         $     D   !B<F%M7W1Y<&4         #@   $     &    \"     "
+    "0         !0    @    !    \"0    $         $     D   !$=6%L(%!O<G0         #@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @           #@0 X    X    !@    @    &          4    (     0    $    !          D"
+    "    (            $$ .    .     8    (    !@         %    \"     $    !     0         )    \"            !! #@   $ "
+    "    &    \"     0         !0    @    !    \"0    $         $     D   !$=6%L(%!O<G0         "
   }
   DataRecord {
     Tag			    DataTag0

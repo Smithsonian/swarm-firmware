@@ -95,8 +95,8 @@ function delay_core_config(this_block)
   if (this_block.inputTypesKnown)
     % do input type checking, dynamic output type and generic setup in this code block.
 
-    if (this_block.port('delay').width ~= 13);
-      this_block.setError('Input data type for port "delay" must have width=13.');
+    if (this_block.port('delay').width ~= 15);
+      this_block.setError('Input data type for port "delay" must have width=15.');
     end
 
     if (this_block.port('en').width ~= 1);
