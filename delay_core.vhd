@@ -5,7 +5,7 @@ entity delay_core is
   port (
     ce_1: in std_logic; 
     clk_1: in std_logic; 
-    delay: in std_logic_vector(12 downto 0); 
+    delay: in std_logic_vector(14 downto 0); 
     en: in std_logic; 
     i0: in std_logic_vector(7 downto 0); 
     i1: in std_logic_vector(7 downto 0); 
