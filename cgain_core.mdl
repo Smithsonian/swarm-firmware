@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.60"
+    ComputedModelVersion    "1.62"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,9 +25,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Jun  1 11:04:53 2012"
-  RTWModifiedTimeStamp	  260449212
-  ModelVersionFormat	  "1.%<AutoIncrement:60>"
+  LastModifiedDate	  "Thu Sep 13 10:11:55 2012"
+  RTWModifiedTimeStamp	  269431912
+  ModelVersionFormat	  "1.%<AutoIncrement:62>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -674,7 +674,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [45, 103, 1010, 1024]
+    Location		    [1, 49, 1439, 865]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -905,6 +905,66 @@ Model {
       SaveFormat	      "Array"
     }
     Block {
+      BlockType		      Reference
+      Name		      "a"
+      SID		      671
+      Ports		      [1, 1]
+      Position		      [640, 330, 700, 350]
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Gateway Out"
+      SourceType	      "Xilinx Gateway Out Block"
+      infoedit		      "Gateway out block.  Converts Xilinx fixed point inputs into ouputs of type Simulink integer, do"
+      "uble, or fixed point.<br><br>Hardware notes:  In hardware these blocks become top level output ports or are disc"
+      "arded, depending on how they are configured."
+      hdl_port		      on
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "20,46,403,473"
+      block_type	      "gatewayout"
+      block_version	      "11.4"
+      sg_icon_stat	      "60,20,1,1,white,yellow,0,cc31b7ac,right,"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
+      ");\npatch([0.4 0.35 0.433333 0.35 0.4 0.483333 0.5 0.516667 0.616667 0.55 0.483333 0.433333 0.516667 0.433333 0."
+      "483333 0.55 0.616667 0.516667 0.5 0.483333 0.4 ],[0.1 0.25 0.5 0.75 0.9 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0"
+      ".1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);\nfprintf('','COMMENT: end ico"
+      "n graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,' ');\ncolor('black'"
+      ");port_label('output',1,'\\fontsize{11pt}\\bf Out ','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "b"
+      SID		      670
+      Ports		      [1, 1]
+      Position		      [640, 400, 700, 420]
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Gateway Out"
+      SourceType	      "Xilinx Gateway Out Block"
+      infoedit		      "Gateway out block.  Converts Xilinx fixed point inputs into ouputs of type Simulink integer, do"
+      "uble, or fixed point.<br><br>Hardware notes:  In hardware these blocks become top level output ports or are disc"
+      "arded, depending on how they are configured."
+      hdl_port		      on
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "gatewayout"
+      block_version	      "11.4"
+      sg_icon_stat	      "60,20,1,1,white,yellow,0,cc31b7ac,right,"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
+      ");\npatch([0.4 0.35 0.433333 0.35 0.4 0.483333 0.5 0.516667 0.616667 0.55 0.483333 0.433333 0.516667 0.433333 0."
+      "483333 0.55 0.616667 0.516667 0.5 0.483333 0.4 ],[0.1 0.25 0.5 0.75 0.9 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0"
+      ".1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);\nfprintf('','COMMENT: end ico"
+      "n graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,' ');\ncolor('black'"
+      ");port_label('output',1,'\\fontsize{11pt}\\bf Out ','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+    }
+    Block {
       BlockType		      SubSystem
       Name		      "car_to_pol"
       SID		      600
@@ -919,7 +979,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"car_to_pol"
-	Location		[2978, 327, 4063, 803]
+	Location		[176, 189, 1261, 665]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -2982,6 +3042,43 @@ Model {
     }
     Block {
       BlockType		      Reference
+      Name		      "gain"
+      SID		      662
+      Ports		      [1, 1]
+      Position		      [235, 290, 300, 310]
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Gateway In"
+      SourceType	      "Xilinx Gateway In Block"
+      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx "
+      "fixed point type.<br><br>Hardware notes:  In hardware these blocks become top level input ports."
+      arith_type	      "Unsigned"
+      n_bits		      "16"
+      bin_pt		      "12"
+      quantization	      "Round  (unbiased: +/- Inf)"
+      overflow		      "Saturate"
+      period		      "1"
+      dbl_ovrd		      off
+      timing_constraint	      "None"
+      locs_specified	      off
+      LOCs		      "{}"
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      hdl_port		      "on"
+      has_advanced_control    "0"
+      sggui_pos		      "2652,515,419,481"
+      block_type	      "gatewayin"
+      block_version	      "11.4"
+      sg_icon_stat	      "65,20,1,1,white,yellow,0,00d3666e,right,"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
+      ");\npatch([0.415385 0.369231 0.446154 0.369231 0.415385 0.492308 0.507692 0.523077 0.615385 0.553846 0.492308 0."
+      "446154 0.523077 0.446154 0.492308 0.553846 0.615385 0.523077 0.507692 0.492308 0.415385 ],[0.1 0.25 0.5 0.75 0.9"
+      " 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0.1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 "
+      "0 1 1 0 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
+      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
+      "rintf('','COMMENT: end icon text');\n"
+    }
+    Block {
+      BlockType		      Reference
       Name		      "gain_adj"
       SID		      661
       Ports		      [2, 1]
@@ -3028,43 +3125,6 @@ Model {
     }
     Block {
       BlockType		      Reference
-      Name		      "gainsq"
-      SID		      662
-      Ports		      [1, 1]
-      Position		      [235, 290, 300, 310]
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway In"
-      SourceType	      "Xilinx Gateway In Block"
-      infoedit		      "Gateway in block.  Converts inputs of type Simulink integer, double and fixed point to  Xilinx "
-      "fixed point type.<br><br>Hardware notes:  In hardware these blocks become top level input ports."
-      arith_type	      "Unsigned"
-      n_bits		      "16"
-      bin_pt		      "12"
-      quantization	      "Round  (unbiased: +/- Inf)"
-      overflow		      "Saturate"
-      period		      "1"
-      dbl_ovrd		      off
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      hdl_port		      "on"
-      has_advanced_control    "0"
-      sggui_pos		      "2652,515,419,481"
-      block_type	      "gatewayin"
-      block_version	      "11.4"
-      sg_icon_stat	      "65,20,1,1,white,yellow,0,00d3666e,right,"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
-      ");\npatch([0.415385 0.369231 0.446154 0.369231 0.415385 0.492308 0.507692 0.523077 0.615385 0.553846 0.492308 0."
-      "446154 0.523077 0.446154 0.492308 0.553846 0.615385 0.523077 0.507692 0.492308 0.415385 ],[0.1 0.25 0.5 0.75 0.9"
-      " 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0.1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 "
-      "0 1 1 0 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
-      "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
-      "rintf('','COMMENT: end icon text');\n"
-    }
-    Block {
-      BlockType		      Reference
       Name		      "im"
       SID		      663
       Ports		      [1, 1]
@@ -3099,36 +3159,6 @@ Model {
       "0 1 1 0 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');"
       "port_label('input',1,'\\fontsize{11pt}\\bf In ','texmode','on');\ncolor('black');port_label('output',1,' ');\nfp"
       "rintf('','COMMENT: end icon text');\n"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "pha"
-      SID		      670
-      Ports		      [1, 1]
-      Position		      [640, 400, 700, 420]
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway Out"
-      SourceType	      "Xilinx Gateway Out Block"
-      infoedit		      "Gateway out block.  Converts Xilinx fixed point inputs into ouputs of type Simulink integer, do"
-      "uble, or fixed point.<br><br>Hardware notes:  In hardware these blocks become top level output ports or are disc"
-      "arded, depending on how they are configured."
-      hdl_port		      on
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      has_advanced_control    "0"
-      sggui_pos		      "-1,-1,-1,-1"
-      block_type	      "gatewayout"
-      block_version	      "11.4"
-      sg_icon_stat	      "60,20,1,1,white,yellow,0,cc31b7ac,right,"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
-      ");\npatch([0.4 0.35 0.433333 0.35 0.4 0.483333 0.5 0.516667 0.616667 0.55 0.483333 0.433333 0.516667 0.433333 0."
-      "483333 0.55 0.616667 0.516667 0.5 0.483333 0.4 ],[0.1 0.25 0.5 0.75 0.9 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0"
-      ".1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);\nfprintf('','COMMENT: end ico"
-      "n graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,' ');\ncolor('black'"
-      ");port_label('output',1,'\\fontsize{11pt}\\bf Out ','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
       BlockType		      Reference
@@ -3246,36 +3276,6 @@ Model {
     }
     Block {
       BlockType		      Reference
-      Name		      "rsq"
-      SID		      671
-      Ports		      [1, 1]
-      Position		      [640, 330, 700, 350]
-      LibraryVersion	      "1.2"
-      SourceBlock	      "xbsIndex_r4/Gateway Out"
-      SourceType	      "Xilinx Gateway Out Block"
-      infoedit		      "Gateway out block.  Converts Xilinx fixed point inputs into ouputs of type Simulink integer, do"
-      "uble, or fixed point.<br><br>Hardware notes:  In hardware these blocks become top level output ports or are disc"
-      "arded, depending on how they are configured."
-      hdl_port		      on
-      timing_constraint	      "None"
-      locs_specified	      off
-      LOCs		      "{}"
-      xl_use_area	      off
-      xl_area		      "[0,0,0,0,0,0,0]"
-      has_advanced_control    "0"
-      sggui_pos		      "20,46,403,473"
-      block_type	      "gatewayout"
-      block_version	      "11.4"
-      sg_icon_stat	      "60,20,1,1,white,yellow,0,cc31b7ac,right,"
-      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.95 0.93 0.65]"
-      ");\npatch([0.4 0.35 0.433333 0.35 0.4 0.483333 0.5 0.516667 0.616667 0.55 0.483333 0.433333 0.516667 0.433333 0."
-      "483333 0.55 0.616667 0.516667 0.5 0.483333 0.4 ],[0.1 0.25 0.5 0.75 0.9 0.9 0.85 0.9 0.9 0.7 0.9 0.75 0.5 0.25 0"
-      ".1 0.3 0.1 0.1 0.15 0.1 0.1 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);\nfprintf('','COMMENT: end ico"
-      "n graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,' ');\ncolor('black'"
-      ");port_label('output',1,'\\fontsize{11pt}\\bf Out ','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
-    }
-    Block {
-      BlockType		      Reference
       Name		      "sync"
       SID		      667
       Ports		      [1, 1]
@@ -3368,11 +3368,11 @@ Model {
     Line {
       SrcBlock		      "Constant"
       SrcPort		      1
-      DstBlock		      "gainsq"
+      DstBlock		      "gain"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "gainsq"
+      SrcBlock		      "gain"
       SrcPort		      1
       Points		      [200, 0; 0, 25]
       DstBlock		      "gain_adj"
@@ -3436,13 +3436,13 @@ Model {
       DstPort		      1
     }
     Line {
-      SrcBlock		      "rsq"
+      SrcBlock		      "a"
       SrcPort		      1
       DstBlock		      "To Workspace1"
       DstPort		      1
     }
     Line {
-      SrcBlock		      "pha"
+      SrcBlock		      "b"
       SrcPort		      1
       DstBlock		      "To Workspace2"
       DstPort		      1
@@ -3450,13 +3450,13 @@ Model {
     Line {
       SrcBlock		      "gain_adj"
       SrcPort		      1
-      DstBlock		      "rsq"
+      DstBlock		      "a"
       DstPort		      1
     }
     Line {
       SrcBlock		      "phase_adj"
       SrcPort		      1
-      DstBlock		      "pha"
+      DstBlock		      "b"
       DstPort		      1
     }
     Line {

@@ -18,19 +18,19 @@ function cgain_core_config(this_block)
   %this_block.tagAsCombinational;
 
   this_block.addSimulinkInport('sync');
-  this_block.addSimulinkInport('gainsq');
+  this_block.addSimulinkInport('gain');
   this_block.addSimulinkInport('phase');
-  this_block.addSimulinkInport('im');
   this_block.addSimulinkInport('re');
+  this_block.addSimulinkInport('im');
 
   this_block.addSimulinkOutport('sync_out');
-  this_block.addSimulinkOutport('rsq');
-  this_block.addSimulinkOutport('pha');
+  this_block.addSimulinkOutport('a');
+  this_block.addSimulinkOutport('b');
 
-  pha_port = this_block.port('pha');
-  pha_port.setType('Fix_12_0');
-  rsq_port = this_block.port('rsq');
+  rsq_port = this_block.port('a');
   rsq_port.setType('UFix_16_0');
+  pha_port = this_block.port('b');
+  pha_port.setType('Fix_12_0');
   sync_out_port = this_block.port('sync_out');
   sync_out_port.setType('Bool');
   sync_out_port.useHDLVector(false);
@@ -39,7 +39,7 @@ function cgain_core_config(this_block)
   if (this_block.inputTypesKnown)
     % do input type checking, dynamic output type and generic setup in this code block.
 
-    if (this_block.port('gainsq').width ~= 16);
+    if (this_block.port('gain').width ~= 16);
       this_block.setError('Input data type for port "gainsq" must have width=16.');
     end
 
