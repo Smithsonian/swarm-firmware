@@ -24,13 +24,13 @@ function cgain_core_config(this_block)
   this_block.addSimulinkInport('im');
 
   this_block.addSimulinkOutport('sync_out');
-  this_block.addSimulinkOutport('a');
-  this_block.addSimulinkOutport('b');
+  this_block.addSimulinkOutport('re_out');
+  this_block.addSimulinkOutport('im_out');
 
-  rsq_port = this_block.port('a');
-  rsq_port.setType('UFix_16_0');
-  pha_port = this_block.port('b');
-  pha_port.setType('Fix_12_0');
+  rsq_port = this_block.port('re_out');
+  rsq_port.setType('Fix_18_17');
+  pha_port = this_block.port('im_out');
+  pha_port.setType('Fix_18_17');
   sync_out_port = this_block.port('sync_out');
   sync_out_port.setType('Bool');
   sync_out_port.useHDLVector(false);
@@ -43,16 +43,16 @@ function cgain_core_config(this_block)
       this_block.setError('Input data type for port "gainsq" must have width=16.');
     end
 
-    if (this_block.port('im').width ~= 8);
-      this_block.setError('Input data type for port "im" must have width=8.');
+    if (this_block.port('im').width ~= 18);
+      this_block.setError('Input data type for port "im" must have width=18.');
     end
 
-    if (this_block.port('phase').width ~= 12);
-      this_block.setError('Input data type for port "phase" must have width=12.');
+    if (this_block.port('phase').width ~= 16);
+      this_block.setError('Input data type for port "phase" must have width=16.');
     end
 
-    if (this_block.port('re').width ~= 8);
-      this_block.setError('Input data type for port "re" must have width=8.');
+    if (this_block.port('re').width ~= 18);
+      this_block.setError('Input data type for port "re" must have width=18.');
     end
 
     if (this_block.port('sync').width ~= 1);
