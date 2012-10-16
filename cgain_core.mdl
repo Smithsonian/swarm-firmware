@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.111"
+    ComputedModelVersion    "1.115"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -25,9 +25,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Sep 18 14:05:38 2012"
-  RTWModifiedTimeStamp	  269868420
-  ModelVersionFormat	  "1.%<AutoIncrement:111>"
+  LastModifiedDate	  "Thu Sep 20 10:03:56 2012"
+  RTWModifiedTimeStamp	  270036233
+  ModelVersionFormat	  "1.%<AutoIncrement:115>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -690,7 +690,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [219, 93, 1657, 908]
+    Location		    [45, 193, 1483, 1008]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1118,7 +1118,7 @@ Model {
       SourceType	      "Xilinx Delay Block"
       infoedit		      "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flop."
       en		      off
-      latency		      "3"
+      latency		      "2"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1127,13 +1127,13 @@ Model {
       sggui_pos		      "20,46,419,315"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,85ce9542,right,"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.77 0.82 0.91]"
       ");\npatch([0.257143 0.0857143 0.314286 0.0857143 0.257143 0.514286 0.571429 0.628571 0.914286 0.685714 0.485714 "
       "0.342857 0.571429 0.342857 0.485714 0.685714 0.914286 0.628571 0.571429 0.514286 0.257143 ],[0.117647 0.294118 0"
       ".529412 0.764706 0.941176 0.941176 0.882353 0.941176 0.941176 0.705882 0.911765 0.764706 0.529412 0.294118 0.147"
       "059 0.352941 0.117647 0.117647 0.176471 0.117647 0.117647 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);"
-      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-3"
+      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-2"
       "}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
@@ -1148,7 +1148,7 @@ Model {
       SourceType	      "Xilinx Delay Block"
       infoedit		      "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flop."
       en		      off
-      latency		      "3"
+      latency		      "2"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1157,13 +1157,13 @@ Model {
       sggui_pos		      "20,46,419,315"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,85ce9542,right,"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.77 0.82 0.91]"
       ");\npatch([0.257143 0.0857143 0.314286 0.0857143 0.257143 0.514286 0.571429 0.628571 0.914286 0.685714 0.485714 "
       "0.342857 0.571429 0.342857 0.485714 0.685714 0.914286 0.628571 0.571429 0.514286 0.257143 ],[0.117647 0.294118 0"
       ".529412 0.764706 0.941176 0.941176 0.882353 0.941176 0.941176 0.705882 0.911765 0.764706 0.529412 0.294118 0.147"
       "059 0.352941 0.117647 0.117647 0.176471 0.117647 0.117647 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);"
-      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-3"
+      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-2"
       "}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
@@ -1178,7 +1178,7 @@ Model {
       SourceType	      "Xilinx Delay Block"
       infoedit		      "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flop."
       en		      off
-      latency		      "3"
+      latency		      "2"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1187,13 +1187,13 @@ Model {
       sggui_pos		      "20,46,419,315"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,85ce9542,right,"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.77 0.82 0.91]"
       ");\npatch([0.257143 0.0857143 0.314286 0.0857143 0.257143 0.514286 0.571429 0.628571 0.914286 0.685714 0.485714 "
       "0.342857 0.571429 0.342857 0.485714 0.685714 0.914286 0.628571 0.571429 0.514286 0.257143 ],[0.117647 0.294118 0"
       ".529412 0.764706 0.941176 0.941176 0.882353 0.941176 0.941176 0.705882 0.911765 0.764706 0.529412 0.294118 0.147"
       "059 0.352941 0.117647 0.117647 0.176471 0.117647 0.117647 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);"
-      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-3"
+      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-2"
       "}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
@@ -1298,7 +1298,7 @@ Model {
       SourceType	      "Xilinx Delay Block"
       infoedit		      "Hardware notes: A delay line is a chain, each link of which is an SRL16 followed by a flip-flop."
       en		      off
-      latency		      "3"
+      latency		      "2"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1307,13 +1307,13 @@ Model {
       sggui_pos		      "20,46,419,315"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,85ce9542,right,"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 1 1 0 ],[0 0 1 1 ],[0.77 0.82 0.91]"
       ");\npatch([0.257143 0.0857143 0.314286 0.0857143 0.257143 0.514286 0.571429 0.628571 0.914286 0.685714 0.485714 "
       "0.342857 0.571429 0.342857 0.485714 0.685714 0.914286 0.628571 0.571429 0.514286 0.257143 ],[0.117647 0.294118 0"
       ".529412 0.764706 0.941176 0.941176 0.882353 0.941176 0.941176 0.705882 0.911765 0.764706 0.529412 0.294118 0.147"
       "059 0.352941 0.117647 0.117647 0.176471 0.117647 0.117647 ],[0.98 0.96 0.92]);\nplot([0 1 1 0 0 ],[0 0 1 1 0 ]);"
-      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-3"
+      "\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');disp('z^{-2"
       "}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
@@ -4464,7 +4464,7 @@ Model {
       optimization_goal	      "Speed"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
-      latency		      "3"
+      latency		      "2"
       has_phase_out	      off
       sclr_pin		      off
       clock_enable	      off
@@ -4570,7 +4570,7 @@ Model {
       "ng|Taylor_Series_Corrected|Auto)','optimization_goal'=>'popup(Auto|Area|Speed)','parameter_entry'=>'popup(System"
       "_Parameters|Hardware_Parameters)','partspresent'=>'popup(Phase_Generator_and_SIN_COS_LUT|Phase_Generator_only|SI"
       "N_COS_LUT_only)','userSelections'=>{'amplitude_mode'=>'Unit_Circle','channels'=>'1','dsp48_use'=>'Minimal','late"
-      "ncy'=>'3','memory_type'=>'Block_ROM','noise_shaping'=>'None','optimization_goal'=>'Speed','parameter_entry'=>'Ha"
+      "ncy'=>'2','memory_type'=>'Block_ROM','noise_shaping'=>'None','optimization_goal'=>'Speed','parameter_entry'=>'Ha"
       "rdware_Parameters','partspresent'=>'SIN_COS_LUT_only'}}}"
     }
     Block {
