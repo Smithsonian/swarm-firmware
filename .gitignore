@@ -1,2 +1,7 @@
 *sysgen*.log
 *.autosave
+
+# Ignore everything in fft_core/
+fft_core/*
+# But unignore the netlist file
+!fft_core/fft_core.ngc
