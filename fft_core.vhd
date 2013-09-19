@@ -23,7 +23,7 @@ entity fft_core is
     i9: in std_logic_vector(17 downto 0); 
     shift: in std_logic_vector(14 downto 0); 
     sync: in std_logic; 
-    oflow: out std_logic; 
+    oflow: out std_logic_vector(31 downto 0); 
     q0: out std_logic_vector(35 downto 0); 
     q1: out std_logic_vector(35 downto 0); 
     q2: out std_logic_vector(35 downto 0); 

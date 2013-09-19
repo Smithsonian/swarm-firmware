@@ -1,2 +1,14 @@
 *sysgen*.log
 *.autosave
+
+# Ignore everything in fft_core/
+fft_core/*
+# But unignore the netlist file
+!fft_core/fft_core.ngc
+
+# Ignore everything in sma_corr, then unignore sma_corr/bit_files so
+# we can ignore everything in there except for *.bof files.
+sma_corr/*
+!sma_corr/bit_files
+sma_corr/bit_files/*
+!sma_corr/bit_files/*.bof
