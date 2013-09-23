@@ -48,7 +48,7 @@ function fft_core_config(this_block)
   this_block.addSimulinkOutport('oflow');
 
   oflow_port = this_block.port('oflow');
-  oflow_port.setType('UFix_32_0');
+  oflow_port.setType('UFix_4_0');
   %oflow_port.setType('Bool');
   %oflow_port.useHDLVector(false);
   q0_port = this_block.port('q0');
