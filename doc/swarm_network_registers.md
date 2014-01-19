@@ -123,6 +123,11 @@
     - `cnt2` is count of SOWF rising edges received on eth2
     - `cnt3` is count of SOWF rising edges received on eth3
 
+* `network/sync_count`
+
+    Count of sync pulses sent to the X engines.  This register should increment
+    exactly once per Walsh frame.
+
 * `network/xid`
 
     Each byte is bits 12 downto 5 of the most recently received XID on each 10
