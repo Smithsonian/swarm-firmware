@@ -2,10 +2,26 @@
 
 * `sync/control`
 
+    - control[31] is the "ARM SOWF" bit (0x80000000).  This bit needs to be set
+      on all ROACH2's pretty close to each other (within one SOWF cycle).
+      The internal SOWF generator synchronizes to the first external SOWF pulse
+      after a rising edge of this bit.
+
+    - control[30] is the "ARM 1PPS" bit (0x40000000).  This bit needs to be set
+      on all ROACH2's pretty close to each other (within one 1PPS cycle).
+      The internal SOWF generator synchronizes to the first external 1PPS pulse
+      after a rising edge of this bit.
+
     - control[29] is the "Arm MCNT" bit (0x20000000).  This bit needs to be set
       on all ROACH2's pretty close to each other (within one sync cycle).
       The MCNT counter resets on the first sync pulse after a rising edge of
       this bit.
+
+    - control[0] is the "SOWF/1PPS" select bit (0x000000001).  This bit
+      specifies which ADC provides SOWF and which ADC provides 1PPS.  If it is
+      a `0`, then SOWF is expected via ADC0 and 1PPS is expected via ADC1.  If
+      it is a `1`, then 1PPS is expected via ADC0 and SOWF is expected via
+      ADC1.
 
 # Network-related Scope Configuration
 
@@ -147,3 +163,54 @@ I think the channels going into the X engine on ROACH2 #0 (FID=0) will be:
 The channels for FID=1 will be the same pattern as for FID=0, but 8 channels
 higher.  The channels for FID=2 will be the same pattern as for FID=0, but 16
 channels higher.  And so on...
+
+# Other Registers
+
+This section describes other registers that are not specifically network
+related.
+
+* `source/ctrl`
+
+    Control register for selecting/controlling F engine input sources.
+
+    - `ctrl[31]`    = Arm noise source 1
+    - `ctrl[30]`    = Arm noise source 0
+    - `ctrl[29:18]` = Tone frequency 1 (units?)
+    - `ctrl[17: 6]` = Tone frequency 0 (units?)
+    - `ctrl[ 5: 3]` = Input selector 1
+    - `ctrl[ 2: 0]` = Input selector 0
+
+    Input selector values are:
+
+    - `0` = All 0x00
+    - `1` = All 0x80 (maybe not working as intended?)
+    - `2` = ADC
+    - `3` = Noise
+    - `4` = Tone
+    - `5` = Dither (noise+tone?)
+    - `6` = All 0x00
+    - `7` = All 0x00
+
+* `source/seed0`
+
+    Sets the seed of the noise generator 0.
+
+* `source/seed1`
+
+    Sets the seed of the noise generator 1.
+
+* `sync/ext_pps_cnt`
+
+    The count of external 1PPS pulses received (cannot be reset).
+
+* `sync/ext_pps_period`
+
+    The period between the two most recent external 1PPS pulses.
+
+* `sync/ext_sowf_cnt`
+
+    The count of external SOWF pulses received (cannot be reset).
+
+* `sync/ext_sowf_period`
+
+    The period between the two most recent external SOWF pulses.
