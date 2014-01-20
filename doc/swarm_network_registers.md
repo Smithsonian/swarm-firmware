@@ -3,7 +3,7 @@
 * `sync/control`
 
     - control[29] is the "Arm MCNT" bit (0x20000000).  This bit needs to be set
-      on both ROACH2's pretty close to each other (within one sync cycle).
+      on all ROACH2's pretty close to each other (within one sync cycle).
       The MCNT counter resets on the first sync pulse after a rising edge of
       this bit.
 
@@ -130,12 +130,12 @@
 
 * `network/xid`
 
-    Each byte is bits 12 downto 5 of the most recently received XID on each 10
+    Each byte is bits 12 down to 5 of the most recently received XID on each 10
     Gbe core.  The low byte is eth0.  This is essentially the same thing as
-    bits 13 downto 6 of the most recently received channel number.  Bits 4
-    downto 0 of the received XID should be constant for each 10 GbE core.
+    bits 13 down to 6 of the most recently received channel number.  Bits 4
+    down to 0 of the received XID should be constant for each 10 GbE core.
 
-# Data distribution
+# Data Distribution
 
 I think the channels going into the X engine on ROACH2 #0 (FID=0) will be:
 
