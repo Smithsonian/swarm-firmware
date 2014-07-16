@@ -13,3 +13,4 @@ sma_corr/*
 sma_corr/bit_files/*
 !sma_corr/bit_files/*.bof
 !sma_corr/bit_files/*.bof.gz
+!sma_corr/pblocks
