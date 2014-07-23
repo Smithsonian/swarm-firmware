@@ -1,1 +1,5 @@
 Timing errors: 4186  Score: 1330530 (Setup/Max: 1330530, Hold: 0)
+
+After using par -xe n and -ol high:
+
+Timing errors: 4006  Score: 1247034 (Setup/Max: 1247034, Hold: 0)
