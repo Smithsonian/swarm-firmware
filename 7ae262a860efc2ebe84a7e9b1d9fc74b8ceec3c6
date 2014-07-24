@@ -1,1 +1,7 @@
 Timing errors: 4088  Score: 1415342 (Setup/Max: 1415342, Hold: 0)
+
+After using -global_opt speed:
+
+Timing Score: 2134146 (Setup: 2087125, Hold: 47021, Component Switching Limit: 0)
+
+with 9 signals not routed at all!
