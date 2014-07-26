@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.127"
+    ComputedModelVersion    "1.129"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [94.0, 0.0, 1489.0, 993.0]
+      Location		      [93.0, 0.0, 1491.0, 1026.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1451.0, 813.0]
+	Extents			[1453.0, 846.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 0.0]
       }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Jul 24 14:14:17 2014"
-  RTWModifiedTimeStamp	  328111583
-  ModelVersionFormat	  "1.%<AutoIncrement:127>"
+  LastModifiedDate	  "Sat Jul 26 09:04:46 2014"
+  RTWModifiedTimeStamp	  328266093
+  ModelVersionFormat	  "1.%<AutoIncrement:129>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -866,7 +866,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [94, 0, 1583, 993]
+    Location		    [93, 0, 1584, 1026]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -5852,7 +5852,7 @@ Model {
       ZOrder		      6
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag6"
       MinAlgLoopOccurrences   off
@@ -6004,7 +6004,7 @@ Model {
       ZOrder		      9
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag7"
       MinAlgLoopOccurrences   off
@@ -6156,7 +6156,7 @@ Model {
       ZOrder		      18
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag8"
       MinAlgLoopOccurrences   off
@@ -6378,7 +6378,7 @@ Model {
       ZOrder		      19
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag9"
       MinAlgLoopOccurrences   off
@@ -6565,7 +6565,7 @@ Model {
       ZOrder		      10
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag10"
       MinAlgLoopOccurrences   off
@@ -6717,7 +6717,7 @@ Model {
       ZOrder		      11
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag11"
       MinAlgLoopOccurrences   off
@@ -6869,7 +6869,7 @@ Model {
       ZOrder		      12
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag12"
       MinAlgLoopOccurrences   off
@@ -7056,7 +7056,7 @@ Model {
       ZOrder		      13
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag13"
       MinAlgLoopOccurrences   off
@@ -7243,7 +7243,7 @@ Model {
       ZOrder		      14
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag14"
       MinAlgLoopOccurrences   off
@@ -7430,7 +7430,7 @@ Model {
       ZOrder		      15
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag15"
       MinAlgLoopOccurrences   off
@@ -7582,7 +7582,7 @@ Model {
       ZOrder		      16
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag16"
       MinAlgLoopOccurrences   off
@@ -7734,7 +7734,7 @@ Model {
       ZOrder		      17
       AttributesFormatString  "Latency = %<latency>"
       AncestorBlock	      "casper_library_delays/pipeline"
-      LibraryVersion	      "1.33"
+      LibraryVersion	      "*1.33"
       UserDataPersistent      on
       UserData		      "DataTag17"
       MinAlgLoopOccurrences   off
@@ -9792,8 +9792,8 @@ Model {
       negative_sine	      off
       negative_cosine	      off
       amplitude_mode	      "Unit_Circle"
-      memory_type	      "Block_ROM"
-      optimization_goal	      "Speed"
+      memory_type	      "Auto"
+      optimization_goal	      "Auto"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
       latency		      "2"
@@ -9884,7 +9884,7 @@ Model {
       ipcore_useipmodelcache  "true"
       ipcore_verbose	      "false"
       has_advanced_control    "0"
-      sggui_pos		      "741,324,536,656"
+      sggui_pos		      "752,228,536,656"
       block_type	      "dds_compiler_v4_0"
       block_version	      "11.4"
       sg_icon_stat	      "65,78,1,2,white,blue,0,4b55040d,right,,[ ],[ ]"
@@ -9896,14 +9896,6 @@ Model {
       "99 21.99 ],[0.931 0.946 0.973 ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon te"
       "xt');\ncolor('black');port_label('input',1,'phase_in');\ncolor('black');port_label('output',1,'sine');\ncolor('b"
       "lack');port_label('output',2,'cosine');\nfprintf('','COMMENT: end icon text');\n"
-      sg_list_contents	      "{'table'=>{'amplitude_mode'=>'popup(Full_Range|Unit_Circle)','channels'=>'popup(1|2|3|4|"
-      "5|6|7|8|9|10|11|12|13|14|15|16)','dsp48_use'=>'popup(Minimal|Maximal)','latency'=>'popup(1|2|3|4|5|6|7|8|9|10|11"
-      "|12|13|14|15)','memory_type'=>'popup(Auto|Distributed_ROM|Block_ROM)','noise_shaping'=>'popup(None|Phase_Ditheri"
-      "ng|Taylor_Series_Corrected|Auto)','optimization_goal'=>'popup(Auto|Area|Speed)','parameter_entry'=>'popup(System"
-      "_Parameters|Hardware_Parameters)','partspresent'=>'popup(Phase_Generator_and_SIN_COS_LUT|Phase_Generator_only|SI"
-      "N_COS_LUT_only)','userSelections'=>{'amplitude_mode'=>'Unit_Circle','channels'=>'1','dsp48_use'=>'Minimal','late"
-      "ncy'=>'2','memory_type'=>'Block_ROM','noise_shaping'=>'None','optimization_goal'=>'Speed','parameter_entry'=>'Ha"
-      "rdware_Parameters','partspresent'=>'SIN_COS_LUT_only'}}}"
     }
     Block {
       BlockType		      Reference
