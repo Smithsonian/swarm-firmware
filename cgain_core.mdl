@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.129"
+    ComputedModelVersion    "1.130"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [93.0, 0.0, 1491.0, 1026.0]
+      Location		      [92.0, 0.0, 1493.0, 1059.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1453.0, 846.0]
+	Extents			[1455.0, 879.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 0.0]
       }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Jul 26 09:04:46 2014"
-  RTWModifiedTimeStamp	  328266093
-  ModelVersionFormat	  "1.%<AutoIncrement:129>"
+  LastModifiedDate	  "Sat Jul 26 15:49:45 2014"
+  RTWModifiedTimeStamp	  328290580
+  ModelVersionFormat	  "1.%<AutoIncrement:130>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -866,7 +866,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [93, 0, 1584, 1026]
+    Location		    [92, 0, 1585, 1059]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -5878,7 +5878,7 @@ Model {
 	  Type			  "edit"
 	  Name			  "latency"
 	  Prompt		  "Latency"
-	  Value			  "2"
+	  Value			  "4"
 	  Tunable		  "off"
 	}
       }
@@ -5897,7 +5897,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"240"
+	SIDHighWatermark	"242"
 	SIDPrevWatermark	"240"
 	Block {
 	  BlockType		  Inport
@@ -5968,10 +5968,68 @@ Model {
 	  " end icon text');"
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Register2"
+	  SID			  "806:241"
+	  Ports			  [1, 1]
+	  Position		  [315, 27, 375, 83]
+	  ZOrder		  1
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Register3"
+	  SID			  "806:242"
+	  Ports			  [1, 1]
+	  Position		  [415, 27, 475, 83]
+	  ZOrder		  2
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "q"
 	  SID			  "806:236"
-	  Position		  [315, 48, 345, 62]
+	  Position		  [515, 48, 545, 62]
 	  ZOrder		  -5
 	  IconDisplay		  "Port number"
 	}
@@ -5982,13 +6040,25 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  SrcBlock		  "Register1"
+	  SrcPort		  1
+	  DstBlock		  "Register2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Register2"
+	  SrcPort		  1
+	  DstBlock		  "Register3"
+	  DstPort		  1
+	}
+	Line {
 	  SrcBlock		  "d"
 	  SrcPort		  1
 	  DstBlock		  "Register0"
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Register1"
+	  SrcBlock		  "Register3"
 	  SrcPort		  1
 	  DstBlock		  "q"
 	  DstPort		  1
@@ -6030,7 +6100,7 @@ Model {
 	  Type			  "edit"
 	  Name			  "latency"
 	  Prompt		  "Latency"
-	  Value			  "2"
+	  Value			  "4"
 	  Tunable		  "off"
 	}
       }
@@ -6049,7 +6119,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"240"
+	SIDHighWatermark	"242"
 	SIDPrevWatermark	"240"
 	Block {
 	  BlockType		  Inport
@@ -6120,17 +6190,87 @@ Model {
 	  " end icon text');"
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Register2"
+	  SID			  "809:241"
+	  Ports			  [1, 1]
+	  Position		  [315, 27, 375, 83]
+	  ZOrder		  1
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Register3"
+	  SID			  "809:242"
+	  Ports			  [1, 1]
+	  Position		  [415, 27, 475, 83]
+	  ZOrder		  2
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "q"
 	  SID			  "809:236"
-	  Position		  [315, 48, 345, 62]
+	  Position		  [515, 48, 545, 62]
 	  ZOrder		  -5
 	  IconDisplay		  "Port number"
 	}
 	Line {
+	  SrcBlock		  "Register0"
+	  SrcPort		  1
+	  DstBlock		  "Register1"
+	  DstPort		  1
+	}
+	Line {
 	  SrcBlock		  "Register1"
 	  SrcPort		  1
-	  DstBlock		  "q"
+	  DstBlock		  "Register2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Register2"
+	  SrcPort		  1
+	  DstBlock		  "Register3"
 	  DstPort		  1
 	}
 	Line {
@@ -6140,9 +6280,9 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Register0"
+	  SrcBlock		  "Register3"
 	  SrcPort		  1
-	  DstBlock		  "Register1"
+	  DstBlock		  "q"
 	  DstPort		  1
 	}
       }
@@ -6591,7 +6731,7 @@ Model {
 	  Type			  "edit"
 	  Name			  "latency"
 	  Prompt		  "Latency"
-	  Value			  "2"
+	  Value			  "4"
 	  Tunable		  "off"
 	}
       }
@@ -6610,7 +6750,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"240"
+	SIDHighWatermark	"242"
 	SIDPrevWatermark	"240"
 	Block {
 	  BlockType		  Inport
@@ -6681,10 +6821,68 @@ Model {
 	  " end icon text');"
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Register2"
+	  SID			  "810:241"
+	  Ports			  [1, 1]
+	  Position		  [315, 27, 375, 83]
+	  ZOrder		  1
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Register3"
+	  SID			  "810:242"
+	  Ports			  [1, 1]
+	  Position		  [415, 27, 475, 83]
+	  ZOrder		  2
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "q"
 	  SID			  "810:236"
-	  Position		  [315, 48, 345, 62]
+	  Position		  [515, 48, 545, 62]
 	  ZOrder		  -5
 	  IconDisplay		  "Port number"
 	}
@@ -6695,13 +6893,25 @@ Model {
 	  DstPort		  1
 	}
 	Line {
+	  SrcBlock		  "Register1"
+	  SrcPort		  1
+	  DstBlock		  "Register2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Register2"
+	  SrcPort		  1
+	  DstBlock		  "Register3"
+	  DstPort		  1
+	}
+	Line {
 	  SrcBlock		  "d"
 	  SrcPort		  1
 	  DstBlock		  "Register0"
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Register1"
+	  SrcBlock		  "Register3"
 	  SrcPort		  1
 	  DstBlock		  "q"
 	  DstPort		  1
@@ -6743,7 +6953,7 @@ Model {
 	  Type			  "edit"
 	  Name			  "latency"
 	  Prompt		  "Latency"
-	  Value			  "2"
+	  Value			  "4"
 	  Tunable		  "off"
 	}
       }
@@ -6762,7 +6972,7 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
-	SIDHighWatermark	"240"
+	SIDHighWatermark	"242"
 	SIDPrevWatermark	"240"
 	Block {
 	  BlockType		  Inport
@@ -6833,17 +7043,87 @@ Model {
 	  " end icon text');"
 	}
 	Block {
+	  BlockType		  Reference
+	  Name			  "Register2"
+	  SID			  "811:241"
+	  Ports			  [1, 1]
+	  Position		  [315, 27, 375, 83]
+	  ZOrder		  1
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Register3"
+	  SID			  "811:242"
+	  Ports			  [1, 1]
+	  Position		  [415, 27, 475, 83]
+	  ZOrder		  2
+	  LibraryVersion	  "1.2"
+	  SourceBlock		  "xbsIndex_r4/Register"
+	  SourceType		  "Xilinx Register Block"
+	  init			  "0"
+	  rst			  off
+	  en			  off
+	  dbl_ovrd		  off
+	  xl_use_area		  off
+	  xl_area		  "[0,0,0,0,0,0,0]"
+	  has_advanced_control	  "0"
+	  sggui_pos		  "-1,-1,-1,-1"
+	  block_type		  "register"
+	  sg_icon_stat		  "60,56,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 60 60 0 0 ],[0 0 56 56 0 ],[0.77 0.82 0.91"
+	  " ]);\nplot([0 60 60 0 0 ],[0 0 56 56 0 ]);\npatch([12.2 23.76 31.76 39.76 47.76 31.76 20.2 12.2 ],[36.88 36.88 44.8"
+	  "8 36.88 44.88 44.88 44.88 36.88 ],[1 1 1 ]);\npatch([20.2 31.76 23.76 12.2 20.2 ],[28.88 28.88 36.88 36.88 28.88 ],"
+	  "[0.931 0.946 0.973 ]);\npatch([12.2 23.76 31.76 20.2 12.2 ],[20.88 20.88 28.88 28.88 20.88 ],[1 1 1 ]);\npatch([20."
+	  "2 47.76 39.76 31.76 23.76 12.2 20.2 ],[12.88 12.88 20.88 12.88 20.88 20.88 12.88 ],[0.931 0.946 0.973 ]);\nfprintf("
+	  "'','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('input',1,'d'"
+	  ");\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprintf('','COMMENT:"
+	  " end icon text');"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "q"
 	  SID			  "811:236"
-	  Position		  [315, 48, 345, 62]
+	  Position		  [515, 48, 545, 62]
 	  ZOrder		  -5
 	  IconDisplay		  "Port number"
 	}
 	Line {
+	  SrcBlock		  "Register0"
+	  SrcPort		  1
+	  DstBlock		  "Register1"
+	  DstPort		  1
+	}
+	Line {
 	  SrcBlock		  "Register1"
 	  SrcPort		  1
-	  DstBlock		  "q"
+	  DstBlock		  "Register2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Register2"
+	  SrcPort		  1
+	  DstBlock		  "Register3"
 	  DstPort		  1
 	}
 	Line {
@@ -6853,9 +7133,9 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Register0"
+	  SrcBlock		  "Register3"
 	  SrcPort		  1
-	  DstBlock		  "Register1"
+	  DstBlock		  "q"
 	  DstPort		  1
 	}
       }
@@ -8528,7 +8808,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"scope2"
-	Location		[1945, 273, 2535, 945]
+	Location		[92, 0, 1585, 1059]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8573,23 +8853,23 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "13"
+	  latency		  "15"
 	  dbl_ovrd		  off
 	  reg_retiming		  off
 	  xl_use_area		  off
 	  xl_area		  "[0,0,0,0,0,0,0]"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "20,46,419,315"
+	  sggui_pos		  "20,46,484,387"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "35,22,1,1,white,blue,0,58c8c5ee,right,,[ ],[ ]"
+	  sg_icon_stat		  "35,22,1,1,white,blue,0,c21c4c41,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 35 35 0 0 ],[0 0 22 22 0 ]);\npatch([10.325 14.66 17.66 20.66 23.66 17.66 13.325 10.325 ],[14.33 14.3"
 	  "3 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([13.325 17.66 14.66 10.325 13.325 ],[11.33 11.33 14.33 14"
 	  ".33 11.33 ],[0.931 0.946 0.973 ]);\npatch([10.325 14.66 17.66 13.325 10.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 "
 	  "]);\npatch([13.325 23.66 20.66 17.66 14.66 10.325 13.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973"
 	  " ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('"
-	  "z^{-13}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+	  "z^{-15}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
 	  BlockType		  Reference
@@ -8606,23 +8886,23 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "13"
+	  latency		  "15"
 	  dbl_ovrd		  off
 	  reg_retiming		  off
 	  xl_use_area		  off
 	  xl_area		  "[0,0,0,0,0,0,0]"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "20,46,419,315"
+	  sggui_pos		  "20,46,484,387"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "35,22,1,1,white,blue,0,58c8c5ee,right,,[ ],[ ]"
+	  sg_icon_stat		  "35,22,1,1,white,blue,0,c21c4c41,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 35 35 0 0 ],[0 0 22 22 0 ]);\npatch([10.325 14.66 17.66 20.66 23.66 17.66 13.325 10.325 ],[14.33 14.3"
 	  "3 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([13.325 17.66 14.66 10.325 13.325 ],[11.33 11.33 14.33 14"
 	  ".33 11.33 ],[0.931 0.946 0.973 ]);\npatch([10.325 14.66 17.66 13.325 10.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 "
 	  "]);\npatch([13.325 23.66 20.66 17.66 14.66 10.325 13.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973"
 	  " ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('"
-	  "z^{-13}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+	  "z^{-15}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
 	  BlockType		  Reference
@@ -8843,7 +9123,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"scope3"
-	Location		[3015, 248, 3605, 920]
+	Location		[92, 0, 1585, 1059]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8888,23 +9168,23 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "13"
+	  latency		  "15"
 	  dbl_ovrd		  off
 	  reg_retiming		  off
 	  xl_use_area		  off
 	  xl_area		  "[0,0,0,0,0,0,0]"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "20,46,419,315"
+	  sggui_pos		  "20,46,484,387"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "35,22,1,1,white,blue,0,58c8c5ee,right,,[ ],[ ]"
+	  sg_icon_stat		  "35,22,1,1,white,blue,0,c21c4c41,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 35 35 0 0 ],[0 0 22 22 0 ]);\npatch([10.325 14.66 17.66 20.66 23.66 17.66 13.325 10.325 ],[14.33 14.3"
 	  "3 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([13.325 17.66 14.66 10.325 13.325 ],[11.33 11.33 14.33 14"
 	  ".33 11.33 ],[0.931 0.946 0.973 ]);\npatch([10.325 14.66 17.66 13.325 10.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 "
 	  "]);\npatch([13.325 23.66 20.66 17.66 14.66 10.325 13.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973"
 	  " ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('"
-	  "z^{-13}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+	  "z^{-15}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
 	  BlockType		  Reference
@@ -8921,23 +9201,23 @@ Model {
 	  rst			  off
 	  infoeditControl	  "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
 	  en			  off
-	  latency		  "13"
+	  latency		  "15"
 	  dbl_ovrd		  off
 	  reg_retiming		  off
 	  xl_use_area		  off
 	  xl_area		  "[0,0,0,0,0,0,0]"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "20,46,419,315"
+	  sggui_pos		  "20,46,484,387"
 	  block_type		  "delay"
 	  block_version		  "11.4"
-	  sg_icon_stat		  "35,22,1,1,white,blue,0,58c8c5ee,right,,[ ],[ ]"
+	  sg_icon_stat		  "35,22,1,1,white,blue,0,c21c4c41,right,,[ ],[ ]"
 	  sg_mask_display	  "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 22 22 0 ],[0.77 0.82 0.91"
 	  " ]);\nplot([0 35 35 0 0 ],[0 0 22 22 0 ]);\npatch([10.325 14.66 17.66 20.66 23.66 17.66 13.325 10.325 ],[14.33 14.3"
 	  "3 17.33 14.33 17.33 17.33 17.33 14.33 ],[1 1 1 ]);\npatch([13.325 17.66 14.66 10.325 13.325 ],[11.33 11.33 14.33 14"
 	  ".33 11.33 ],[0.931 0.946 0.973 ]);\npatch([10.325 14.66 17.66 13.325 10.325 ],[8.33 8.33 11.33 11.33 8.33 ],[1 1 1 "
 	  "]);\npatch([13.325 23.66 20.66 17.66 14.66 10.325 13.325 ],[5.33 5.33 8.33 5.33 8.33 8.33 5.33 ],[0.931 0.946 0.973"
 	  " ]);\nfprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('"
-	  "z^{-13}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+	  "z^{-15}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
 	}
 	Block {
 	  BlockType		  Reference
@@ -9796,7 +10076,7 @@ Model {
       optimization_goal	      "Auto"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
-      latency		      "2"
+      latency		      "4"
       has_phase_out	      off
       sclr_pin		      off
       clock_enable	      off
@@ -9884,7 +10164,7 @@ Model {
       ipcore_useipmodelcache  "true"
       ipcore_verbose	      "false"
       has_advanced_control    "0"
-      sggui_pos		      "752,228,536,656"
+      sggui_pos		      "706,177,536,656"
       block_type	      "dds_compiler_v4_0"
       block_version	      "11.4"
       sg_icon_stat	      "65,78,1,2,white,blue,0,4b55040d,right,,[ ],[ ]"
@@ -10583,18 +10863,18 @@ MatData {
   DataRecord {
     Tag			    DataTag6
     Data		    "  %)30     .    4 $   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $)8+0 .    P     "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $18+0 .    P     "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    2    9&5F875L=', ;&%T96YC>0          #@   \""
     "@    &    \"     $         !0    @               $         #@   #@    &    \"     8         !0    @    !     0    "
-    "$         \"0    @             0 "
+    "$         \"0    @            00 "
   }
   DataRecord {
     Tag			    DataTag7
     Data		    "  %)30     .    4 $   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $)8+0 .    P     "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $18+0 .    P     "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    2    9&5F875L=', ;&%T96YC>0          #@   \""
     "@    &    \"     $         !0    @               $         #@   #@    &    \"     8         !0    @    !     0    "
-    "$         \"0    @             0 "
+    "$         \"0    @            00 "
   }
   DataRecord {
     Tag			    DataTag8
@@ -10615,18 +10895,18 @@ MatData {
   DataRecord {
     Tag			    DataTag10
     Data		    "  %)30     .    4 $   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $)8+0 .    P     "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $18+0 .    P     "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    2    9&5F875L=', ;&%T96YC>0          #@   \""
     "@    &    \"     $         !0    @               $         #@   #@    &    \"     8         !0    @    !     0    "
-    "$         \"0    @             0 "
+    "$         \"0    @            00 "
   }
   DataRecord {
     Tag			    DataTag11
     Data		    "  %)30     .    4 $   8    (     @         %    \"     $    !     0         %  0 \"P    $    6    <W1A="
-    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $)8+0 .    P     "
+    "&4       !P87)A;65T97)S    #@   #     &    \"     T         !0    @    !     0    $         !@ $ $18+0 .    P     "
     "8    (     @         %    \"     $    !     0         %  0 \"0    $    2    9&5F875L=', ;&%T96YC>0          #@   \""
     "@    &    \"     $         !0    @               $         #@   #@    &    \"     8         !0    @    !     0    "
-    "$         \"0    @             0 "
+    "$         \"0    @            00 "
   }
   DataRecord {
     Tag			    DataTag12
