@@ -1,5 +1,4 @@
 #### FFT 0 pblock
-INST "sma_corr_cgain_gain_0_ramblk/*"                                                    AREA_GROUP = "fft_0_pb";
 INST "sma_corr_xsg_core_config/sma_corr_xsg_core_config/sma_corr_x0/cgain_0_*/*"         AREA_GROUP = "fft_0_pb";
 INST "sma_corr_xsg_core_config/sma_corr_xsg_core_config/sma_corr_x0/fengine_0_*/fft_0/*" AREA_GROUP = "fft_0_pb";
 AREA_GROUP "fft_0_pb" RANGE=DSP48_X7Y10:DSP48_X13Y101;
@@ -7,7 +6,6 @@ AREA_GROUP "fft_0_pb" RANGE=RAMB18_X7Y10:RAMB18_X13Y101;
 AREA_GROUP "fft_0_pb" RANGE=RAMB36_X7Y5:RAMB36_X13Y50;
 
 #### FFT 1 pblock
-INST "sma_corr_cgain_gain_1_ramblk/*"                                                    AREA_GROUP = "fft_1_pb";
 INST "sma_corr_xsg_core_config/sma_corr_xsg_core_config/sma_corr_x0/cgain_1_*/*"         AREA_GROUP = "fft_1_pb";
 INST "sma_corr_xsg_core_config/sma_corr_xsg_core_config/sma_corr_x0/fengine_1_*/fft_1/*" AREA_GROUP = "fft_1_pb";
 AREA_GROUP "fft_1_pb" RANGE=DSP48_X0Y0:DSP48_X6Y81;
