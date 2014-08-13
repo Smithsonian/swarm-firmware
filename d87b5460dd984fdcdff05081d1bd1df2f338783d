@@ -1,1 +1,3 @@
 Timing errors: 21005  Score: 10768230 (Setup/Max: 10672943, Hold: 95287)
+
+WARNING: I may have forgotten to set the USER_UCF_PATH variable for this build.
