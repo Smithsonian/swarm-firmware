@@ -1,1 +1,7 @@
 Timing errors: 722  Score: 135816 (Setup/Max: 135816, Hold: 0)
+
+Resynthed the sma_corr_cw netlist with the following command:
+
+>> resynth_netlist('sma_corr/sysgen', 'sma_corr_cw', '-opt_mode', 'area',
+	'-glob_opt', 'allclocknets', '-register_balancing', 'yes',
+	'-optimize_primitives', 'yes', '-read_cores', 'yes')
