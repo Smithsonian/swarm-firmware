@@ -9,3 +9,14 @@ Resynthed the sma_corr_cw netlist with the following command:
 And got the following timing score:
 
 Timing errors: 1049  Score: 395809 (Setup/Max: 395809, Hold: 0)
+
+Resynthed the sma_corr_cw with the following command:
+
+>> resynth_netlist('sma_corr/sysgen', 'sma_corr_cw', '-opt_mode', 'area',
+	'-glob_opt', 'allclocknets', '-register_balancing', 'yes',
+	'-optimize_primitives', 'yes', '-read_cores', 'yes',
+	'-equivalent_register_removal', 'no')
+
+And got the following timing score:
+
+Timing errors: 811  Score: 289477 (Setup/Max: 289477, Hold: 0)
