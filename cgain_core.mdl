@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.139"
+    ComputedModelVersion    "1.140"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Feb 06 00:01:38 2015"
-  RTWModifiedTimeStamp	  345081490
-  ModelVersionFormat	  "1.%<AutoIncrement:139>"
+  LastModifiedDate	  "Fri Feb 06 10:05:12 2015"
+  RTWModifiedTimeStamp	  345117909
+  ModelVersionFormat	  "1.%<AutoIncrement:140>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -5382,14 +5382,14 @@ Model {
 	  quantization		  "Truncate"
 	  overflow		  "Saturate"
 	  dbl_ovrd		  off
-	  use_behavioral_HDL	  on
-	  hw_selection		  "Fabric"
+	  use_behavioral_HDL	  off
+	  hw_selection		  "DSP48"
 	  pipelined		  on
 	  xl_use_area		  off
 	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
 	  use_rpm		  "on"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
+	  sggui_pos		  "20,20,484,365"
 	  block_type		  "addsub"
 	  block_version		  "10.1.3"
 	  sg_icon_stat		  "45,113,2,1,white,blue,0,6cdeed65,right,,[ ],[ ]"
@@ -5768,7 +5768,7 @@ Model {
       }
       System {
 	Name			"convert3"
-	Location		[812, 48, 1926, 714]
+	Location		[0, 0, 1800, 875]
 	Open			off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -5917,14 +5917,14 @@ Model {
 	  quantization		  "Truncate"
 	  overflow		  "Saturate"
 	  dbl_ovrd		  off
-	  use_behavioral_HDL	  on
-	  hw_selection		  "Fabric"
+	  use_behavioral_HDL	  off
+	  hw_selection		  "DSP48"
 	  pipelined		  on
 	  xl_use_area		  off
 	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
 	  use_rpm		  "on"
 	  has_advanced_control	  "0"
-	  sggui_pos		  "-1,-1,-1,-1"
+	  sggui_pos		  "20,20,484,365"
 	  block_type		  "addsub"
 	  block_version		  "10.1.3"
 	  sg_icon_stat		  "45,113,2,1,white,blue,0,6cdeed65,right,,[ ],[ ]"
@@ -6141,7 +6141,6 @@ Model {
 	Line {
 	  SrcBlock		  "almost_half"
 	  SrcPort		  1
-	  Points		  [0, 0]
 	  DstBlock		  "force2"
 	  DstPort		  1
 	}
