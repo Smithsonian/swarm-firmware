@@ -3,6 +3,9 @@
 *.autosave
 *.mdl.*
 
+# Ignore emacs back-up files
+*~
+
 # Ignore everything in black box cores/
 *_core/*
 # But unignore the netlist file
