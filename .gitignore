@@ -1,5 +1,7 @@
+# MATLAB/Simulink autosaves
 *sysgen*.log
 *.autosave
+*.mdl.*
 
 # Ignore everything in black box cores/
 *_core/*
