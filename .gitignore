@@ -1,10 +1,15 @@
+# MATLAB/Simulink autosaves
 *sysgen*.log
 *.autosave
+*.mdl.*
 
-# Ignore everything in fft_core/
-fft_core/*
+# Ignore emacs back-up files
+*~
+
+# Ignore everything in black box cores/
+*_core/*
 # But unignore the netlist file
-!fft_core/fft_core.ngc
+!*_core/*_core.ngc
 
 # Ignore everything in sma_corr, then unignore sma_corr/bit_files so
 # we can ignore everything in there except for *.bof files.
