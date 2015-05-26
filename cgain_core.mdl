@@ -5383,7 +5383,7 @@ Model {
 	  overflow		  "Saturate"
 	  dbl_ovrd		  off
 	  use_behavioral_HDL	  off
-	  hw_selection		  "Fabric"
+	  hw_selection		  "DSP48"
 	  pipelined		  on
 	  xl_use_area		  off
 	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
@@ -5918,7 +5918,7 @@ Model {
 	  overflow		  "Saturate"
 	  dbl_ovrd		  off
 	  use_behavioral_HDL	  off
-	  hw_selection		  "Fabric"
+	  hw_selection		  "DSP48"
 	  pipelined		  on
 	  xl_use_area		  off
 	  xl_area		  "[0, 0, 0, 0, 0, 0, 0]"
