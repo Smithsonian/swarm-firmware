@@ -3,7 +3,6 @@
 export PLATFORM=lin64
 export MATLAB_PATH=/usr/local/MATLAB/R2013a
 export XILINX_PATH=/opt/Xilinx/14.7/ISE_DS
-export XPS_BASE_PATH=$MLIB_DEVEL_PATH/xps_base
 export MLIB_DEVEL_PATH=/home/rprimian/git/mlib_devel
 export MLIB_ROOT=$MLIB_DEVEL_PATH
 export MATLAB=$MATLAB_PATH
