@@ -1,3 +1,3 @@
 #### QDR2 controller pblock
 INST "qdr2_controller" AREA_GROUP = "qdr2_pb";
-AREA_GROUP "qdr2_pb" RANGE=SLICE_X20Y128:SLICE_X115Y163;
+AREA_GROUP "qdr2_pb" RANGE=SLICE_X10Y128:SLICE_X115Y163;
