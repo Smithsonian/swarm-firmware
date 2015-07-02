@@ -2,14 +2,14 @@ function swarm_resynth_core(core_name)
 % SWARM_RESYNTH_CORE Re-synthesize a particular SWARM 
 %      core with the "standard" set of XST parameters:
 %
-%      -opt_mode=area
+%      -opt_mode=speed
 %      -glob_opt=allclocknets
 %      -register_balancing=yes
 %      -optimize_primitives=yes'
 %      -read_cores=yes
 %      -lc=off
 
-    xst_args = {'-opt_mode', 'area', ...
+    xst_args = {'-opt_mode', 'speed', ...
         '-glob_opt', 'allclocknets', ...
         '-register_balancing', 'yes', ...
         '-optimize_primitives', 'yes', ...
