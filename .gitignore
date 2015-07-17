@@ -23,3 +23,7 @@ sma_corr/bit_files/*
 # Ignore Plan Ahead and hidden Xilinx files
 _xmsgs*
 planAhead*
+
+# Ignore timing report files
+*.twx
+*.twr
