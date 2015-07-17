@@ -5,7 +5,7 @@ function swarm_resynth_core(core_name)
 %      -opt_mode=speed
 %      -glob_opt=allclocknets
 %      -register_balancing=yes
-%      -optimize_primitives=yes'
+%      -optimize_primitives=yes
 %      -read_cores=yes
 %      -lc=off
 
