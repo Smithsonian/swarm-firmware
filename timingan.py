@@ -1,3 +1,4 @@
+import re
 import argparse
 import xml.dom.minidom as md
 
@@ -16,6 +17,7 @@ def common_heirarchy(src, dest):
 
 parser = argparse.ArgumentParser(description='Parse and print useful information about a TWX timing report.')
 parser.add_argument('--min-slack', dest='min_slack', type=float, help='only show failing heirarchies with this much slack')
+parser.add_argument('--sum-hierarchy', dest='sum_hier', type=str, help='show a sum of slack for a particular hierarchy (regex allowed!)')
 parser.add_argument('report_file', type=str, help='report file, must be *.twx')
 args = parser.parse_args()
 
@@ -46,9 +48,18 @@ print "Total unique common heirarchies: %d" % len(unique_heirarchies)
 def sort_by_slack(key):
     return unique_heirarchies[key]
 
+user_sum = 0.0
 for heir in sorted(unique_heirarchies, key=sort_by_slack):
     slack = unique_heirarchies[heir]
     errors = unique_heir_errors[heir]
+    if args.sum_hier:
+        if re.match(args.sum_hier, heir):
+            heir = re.sub(args.sum_hier, args.sum_hier, heir)
+            user_sum += slack
+        else:
+            continue
     if slack > args.min_slack:
         print "%6.2f ns %12s ==> '%s'" % (slack, "(%d errors)" % errors, heir)
 
+if args.sum_hier:
+    print "User requested slack %6.2f ns ==> '%s'" % (user_sum, args.sum_hier)
