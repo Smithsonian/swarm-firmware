@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.145"
+    ComputedModelVersion    "1.146"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 31.0, 1806.0, 920.0]
+      Location		      [0.0, 31.0, 1808.0, 946.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1573.0, 751.0]
+	Extents			[1575.0, 777.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 25.0]
       }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Aug 03 22:39:46 2015"
-  RTWModifiedTimeStamp	  360542376
-  ModelVersionFormat	  "1.%<AutoIncrement:145>"
+  LastModifiedDate	  "Tue Aug 18 12:54:36 2015"
+  RTWModifiedTimeStamp	  361803270
+  ModelVersionFormat	  "1.%<AutoIncrement:146>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -874,7 +874,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [0, 31, 1806, 951]
+    Location		    [0, 31, 1808, 977]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -888,14 +888,14 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "820"
+    SIDHighWatermark	    "821"
     Block {
       BlockType		      Reference
       Name		      " System Generator"
       SID		      "4"
       Tag		      "genX"
       Ports		      []
-      Position		      [894, 39, 945, 89]
+      Position		      [979, 39, 1030, 89]
       ZOrder		      -1
       ShowName		      off
       AttributesFormatString  "System\\nGenerator"
@@ -961,7 +961,7 @@ Model {
       Name		      "Delay1"
       SID		      "673"
       Ports		      [1, 1]
-      Position		      [425, 133, 460, 167]
+      Position		      [510, 133, 545, 167]
       ZOrder		      -4
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -994,7 +994,7 @@ Model {
       Name		      "Delay10"
       SID		      "707"
       Ports		      [1, 1]
-      Position		      [535, 133, 570, 167]
+      Position		      [620, 133, 655, 167]
       ZOrder		      -5
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1027,7 +1027,7 @@ Model {
       Name		      "Delay11"
       SID		      "717"
       Ports		      [1, 1]
-      Position		      [700, 133, 735, 167]
+      Position		      [785, 133, 820, 167]
       ZOrder		      -6
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1060,7 +1060,7 @@ Model {
       Name		      "Delay12"
       SID		      "734"
       Ports		      [1, 1]
-      Position		      [865, 133, 900, 167]
+      Position		      [950, 133, 985, 167]
       ZOrder		      -7
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1093,7 +1093,7 @@ Model {
       Name		      "Delay13"
       SID		      "736"
       Ports		      [1, 1]
-      Position		      [865, 539, 900, 561]
+      Position		      [950, 539, 985, 561]
       ZOrder		      -8
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1126,7 +1126,7 @@ Model {
       Name		      "Delay14"
       SID		      "737"
       Ports		      [1, 1]
-      Position		      [865, 559, 900, 581]
+      Position		      [950, 559, 985, 581]
       ZOrder		      -9
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1159,7 +1159,7 @@ Model {
       Name		      "Delay15"
       SID		      "814"
       Ports		      [1, 1]
-      Position		      [1025, 258, 1060, 292]
+      Position		      [1110, 258, 1145, 292]
       ZOrder		      13
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1192,7 +1192,7 @@ Model {
       Name		      "Delay16"
       SID		      "815"
       Ports		      [1, 1]
-      Position		      [535, 433, 570, 467]
+      Position		      [620, 433, 655, 467]
       ZOrder		      14
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1225,7 +1225,7 @@ Model {
       Name		      "Delay17"
       SID		      "816"
       Ports		      [1, 1]
-      Position		      [1025, 474, 1060, 496]
+      Position		      [1110, 474, 1145, 496]
       ZOrder		      15
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1258,7 +1258,7 @@ Model {
       Name		      "Delay18"
       SID		      "817"
       Ports		      [1, 1]
-      Position		      [1025, 494, 1060, 516]
+      Position		      [1110, 494, 1145, 516]
       ZOrder		      16
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1291,7 +1291,7 @@ Model {
       Name		      "Delay19"
       SID		      "818"
       Ports		      [1, 1]
-      Position		      [1025, 539, 1060, 561]
+      Position		      [1110, 539, 1145, 561]
       ZOrder		      17
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1324,7 +1324,7 @@ Model {
       Name		      "Delay2"
       SID		      "679"
       Ports		      [1, 1]
-      Position		      [315, 208, 350, 242]
+      Position		      [400, 208, 435, 242]
       ZOrder		      -10
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1357,7 +1357,7 @@ Model {
       Name		      "Delay20"
       SID		      "819"
       Ports		      [1, 1]
-      Position		      [1025, 559, 1060, 581]
+      Position		      [1110, 559, 1145, 581]
       ZOrder		      18
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1390,7 +1390,7 @@ Model {
       Name		      "Delay3"
       SID		      "701"
       Ports		      [1, 1]
-      Position		      [315, 363, 350, 397]
+      Position		      [400, 363, 435, 397]
       ZOrder		      -11
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1423,7 +1423,7 @@ Model {
       Name		      "Delay4"
       SID		      "702"
       Ports		      [1, 1]
-      Position		      [315, 433, 350, 467]
+      Position		      [400, 433, 435, 467]
       ZOrder		      -12
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1456,7 +1456,7 @@ Model {
       Name		      "Delay5"
       SID		      "703"
       Ports		      [1, 1]
-      Position		      [425, 363, 460, 397]
+      Position		      [510, 363, 545, 397]
       ZOrder		      -13
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1489,7 +1489,7 @@ Model {
       Name		      "Delay6"
       SID		      "704"
       Ports		      [1, 1]
-      Position		      [425, 433, 460, 467]
+      Position		      [510, 433, 545, 467]
       ZOrder		      -14
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1522,7 +1522,7 @@ Model {
       Name		      "Delay7"
       SID		      "811"
       Ports		      [1, 1]
-      Position		      [1025, 133, 1060, 167]
+      Position		      [1110, 133, 1145, 167]
       ZOrder		      10
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1555,7 +1555,7 @@ Model {
       Name		      "Delay8"
       SID		      "279"
       Ports		      [1, 1]
-      Position		      [315, 133, 350, 167]
+      Position		      [400, 133, 435, 167]
       ZOrder		      -16
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1588,7 +1588,7 @@ Model {
       Name		      "Delay9"
       SID		      "706"
       Ports		      [1, 1]
-      Position		      [535, 363, 570, 397]
+      Position		      [620, 363, 655, 397]
       ZOrder		      -17
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1621,7 +1621,7 @@ Model {
       Name		      "Negate2"
       SID		      "813"
       Ports		      [1, 1]
-      Position		      [1025, 389, 1060, 451]
+      Position		      [1110, 389, 1145, 451]
       ZOrder		      12
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -1666,9 +1666,39 @@ Model {
       Name		      "Real-Imag to\nComplex"
       SID		      "719"
       Ports		      [2, 1]
-      Position		      [1230, 202, 1260, 493]
+      Position		      [1315, 202, 1345, 493]
       ZOrder		      -19
       ShowName		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Register"
+      SID		      "821"
+      Ports		      [1, 1]
+      Position		      [320, 278, 355, 312]
+      ZOrder		      19
+      ShowName		      off
+      LibraryVersion	      "1.2"
+      SourceBlock	      "xbsIndex_r4/Register"
+      SourceType	      "Xilinx Register Block"
+      init		      "0"
+      rst		      off
+      en		      off
+      dbl_ovrd		      off
+      xl_use_area	      off
+      xl_area		      "[0,0,0,0,0,0,0]"
+      has_advanced_control    "0"
+      sggui_pos		      "-1,-1,-1,-1"
+      block_type	      "register"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,c80657c5,right,,[ ],[ ]"
+      sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 34 34 0 ],[0.77 0."
+      "82 0.91 ]);\nplot([0 35 35 0 0 ],[0 0 34 34 0 ]);\npatch([8.1 13.88 17.88 21.88 25.88 17.88 12.1 8.1 ],[21.44 21"
+      ".44 25.44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([12.1 17.88 13.88 8.1 12.1 ],[17.44 17.44 21.44 21.4"
+      "4 17.44 ],[0.931 0.946 0.973 ]);\npatch([8.1 13.88 17.88 12.1 8.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\n"
+      "patch([12.1 25.88 21.88 17.88 13.88 8.1 12.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\n"
+      "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\ncolor('black');port_label('i"
+      "nput',1,'d');\ncolor('black');port_label('output',1,'q');\ncolor('black');disp('z^{-1}','texmode','on');\nfprint"
+      "f('','COMMENT: end icon text');"
     }
     Block {
       BlockType		      Reference
@@ -1709,7 +1739,7 @@ Model {
       Name		      "To Workspace"
       SID		      "68"
       Ports		      [1]
-      Position		      [1230, 135, 1290, 165]
+      Position		      [1315, 135, 1375, 165]
       ZOrder		      -22
       ShowName		      off
       VariableName	      "sync_out"
@@ -1721,7 +1751,7 @@ Model {
       Name		      "To Workspace1"
       SID		      "668"
       Ports		      [1]
-      Position		      [1295, 333, 1350, 357]
+      Position		      [1380, 333, 1435, 357]
       ZOrder		      -23
       ShowName		      off
       VariableName	      "simout"
@@ -1733,7 +1763,7 @@ Model {
       Name		      "cmult_dsp48e"
       SID		      "718"
       Ports		      [4, 2]
-      Position		      [630, 201, 800, 489]
+      Position		      [715, 201, 885, 489]
       ZOrder		      -24
       BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
       AttributesFormatString  "25_12 * 18_17 ==> 44_29\nLatency=4"
@@ -4070,7 +4100,7 @@ Model {
       Name		      "convert"
       SID		      "752"
       Ports		      [1, 1]
-      Position		      [530, 230, 575, 250]
+      Position		      [615, 230, 660, 250]
       ZOrder		      -25
       BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
       AttributesFormatString  "N_18 ==> 25_12\nround even, saturate\nlatency = 2"
@@ -4606,7 +4636,7 @@ Model {
       Name		      "convert1"
       SID		      "804"
       Ports		      [1, 1]
-      Position		      [530, 300, 575, 320]
+      Position		      [615, 300, 660, 320]
       ZOrder		      4
       BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
       AttributesFormatString  "N_18 ==> 25_12\nround even, saturate\nlatency = 2"
@@ -5142,7 +5172,7 @@ Model {
       Name		      "convert2"
       SID		      "754"
       Ports		      [1, 1]
-      Position		      [860, 265, 905, 285]
+      Position		      [945, 265, 990, 285]
       ZOrder		      -27
       BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
       AttributesFormatString  "N_29 ==> 18_17\nround even, saturate\nlatency = 2"
@@ -5678,7 +5708,7 @@ Model {
       Name		      "convert3"
       SID		      "803"
       Ports		      [1, 1]
-      Position		      [860, 410, 905, 430]
+      Position		      [945, 410, 990, 430]
       ZOrder		      3
       BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
       AttributesFormatString  "N_29 ==> 18_17\nround even, saturate\nlatency = 2"
@@ -6261,7 +6291,7 @@ Model {
       Name		      "gain_mult_im"
       SID		      "680"
       Ports		      [2, 1]
-      Position		      [415, 280, 470, 335]
+      Position		      [500, 280, 555, 335]
       ZOrder		      -30
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -6309,7 +6339,7 @@ Model {
       Name		      "gain_mult_re"
       SID		      "677"
       Ports		      [2, 1]
-      Position		      [415, 210, 470, 265]
+      Position		      [500, 210, 555, 265]
       ZOrder		      -31
       ShowName		      off
       LibraryVersion	      "1.2"
@@ -6403,7 +6433,7 @@ Model {
       Name		      "im_out"
       SID		      "670"
       Ports		      [1, 1]
-      Position		      [1140, 410, 1200, 430]
+      Position		      [1225, 410, 1285, 430]
       ZOrder		      -33
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway Out"
@@ -6531,7 +6561,7 @@ Model {
       Name		      "re_out"
       SID		      "671"
       Ports		      [1, 1]
-      Position		      [1140, 265, 1200, 285]
+      Position		      [1225, 265, 1285, 285]
       ZOrder		      -36
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway Out"
@@ -6567,7 +6597,7 @@ Model {
       Name		      "scope0"
       SID		      "708"
       Ports		      [2]
-      Position		      [700, 60, 750, 100]
+      Position		      [785, 60, 835, 100]
       ZOrder		      -37
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -6882,7 +6912,7 @@ Model {
       Name		      "scope1"
       SID		      "722"
       Ports		      [2]
-      Position		      [1140, 540, 1190, 580]
+      Position		      [1225, 540, 1275, 580]
       ZOrder		      -38
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -7120,7 +7150,7 @@ Model {
       Name		      "scope2"
       SID		      "763"
       Ports		      [2]
-      Position		      [310, 500, 360, 540]
+      Position		      [395, 500, 445, 540]
       ZOrder		      -39
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -7435,7 +7465,7 @@ Model {
       Name		      "scope3"
       SID		      "775"
       Ports		      [2]
-      Position		      [305, 60, 355, 100]
+      Position		      [390, 60, 440, 100]
       ZOrder		      -40
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -7732,7 +7762,7 @@ Model {
       Name		      "scope4"
       SID		      "788"
       Ports		      [2]
-      Position		      [535, 60, 585, 100]
+      Position		      [620, 60, 670, 100]
       ZOrder		      -41
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -8047,7 +8077,7 @@ Model {
       Name		      "scope4bit"
       SID		      "740"
       Ports		      [2]
-      Position		      [1140, 475, 1190, 515]
+      Position		      [1225, 475, 1275, 515]
       ZOrder		      -42
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
@@ -8377,7 +8407,7 @@ Model {
       Name		      "sin_cos"
       SID		      "739"
       Ports		      [1, 2]
-      Position		      [295, 256, 360, 334]
+      Position		      [380, 256, 445, 334]
       ZOrder		      -43
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/DDS Compiler 4.0 "
@@ -8399,7 +8429,7 @@ Model {
       optimization_goal	      "Speed"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
-      latency		      "3"
+      latency		      "2"
       has_phase_out	      off
       sclr_pin		      off
       clock_enable	      off
@@ -8408,7 +8438,7 @@ Model {
       channel_pin	      off
       explicit_period	      off
       period		      "1"
-      phase_increment	      "Fixed"
+      phase_increment	      "Streaming"
       output_frequency1	      "0"
       output_frequency2	      "0"
       output_frequency3	      "0"
@@ -8551,7 +8581,7 @@ Model {
       Name		      "sync_out"
       SID		      "672"
       Ports		      [1, 1]
-      Position		      [1140, 140, 1200, 160]
+      Position		      [1225, 140, 1285, 160]
       ZOrder		      -45
       LibraryVersion	      "1.2"
       SourceBlock	      "xbsIndex_r4/Gateway Out"
@@ -8675,7 +8705,7 @@ Model {
       SrcPort		      1
       Points		      [5, 0]
       Branch {
-	DstBlock		"sin_cos"
+	DstBlock		"Register"
 	DstPort			1
       }
       Branch {
@@ -8965,10 +8995,16 @@ Model {
       DstBlock		      "scope1"
       DstPort		      2
     }
+    Line {
+      SrcBlock		      "Register"
+      SrcPort		      1
+      DstBlock		      "sin_cos"
+      DstPort		      1
+    }
     Annotation {
       SID		      "806"
       Name		      "Since we flipped\ninputs we need to\nconjugate here"
-      Position		      [1039, 349]
+      Position		      [1124, 349]
       DropShadow	      on
       ZOrder		      -1
     }
