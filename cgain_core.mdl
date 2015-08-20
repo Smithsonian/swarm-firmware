@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.145"
+    ComputedModelVersion    "1.146"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 31.0, 1806.0, 920.0]
+      Location		      [0.0, 31.0, 1808.0, 946.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1573.0, 751.0]
+	Extents			[1575.0, 777.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 25.0]
       }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Aug 03 22:39:46 2015"
-  RTWModifiedTimeStamp	  360542376
-  ModelVersionFormat	  "1.%<AutoIncrement:145>"
+  LastModifiedDate	  "Thu Aug 20 15:19:02 2015"
+  RTWModifiedTimeStamp	  361984739
+  ModelVersionFormat	  "1.%<AutoIncrement:146>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -874,7 +874,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [0, 31, 1806, 951]
+    Location		    [0, 31, 1808, 977]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -8395,8 +8395,8 @@ Model {
       negative_sine	      off
       negative_cosine	      off
       amplitude_mode	      "Unit_Circle"
-      memory_type	      "Block_ROM"
-      optimization_goal	      "Speed"
+      memory_type	      "Auto"
+      optimization_goal	      "Auto"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
       latency		      "3"
@@ -8408,7 +8408,7 @@ Model {
       channel_pin	      off
       explicit_period	      off
       period		      "1"
-      phase_increment	      "Fixed"
+      phase_increment	      "Streaming"
       output_frequency1	      "0"
       output_frequency2	      "0"
       output_frequency3	      "0"
