@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.145"
+    ComputedModelVersion    "1.146"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 31.0, 1806.0, 920.0]
+      Location		      [0.0, 31.0, 1808.0, 946.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1573.0, 751.0]
+	Extents			[1575.0, 777.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 25.0]
       }
@@ -67,9 +67,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rprimian"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Aug 03 22:39:46 2015"
-  RTWModifiedTimeStamp	  360542376
-  ModelVersionFormat	  "1.%<AutoIncrement:145>"
+  LastModifiedDate	  "Mon Aug 24 10:53:11 2015"
+  RTWModifiedTimeStamp	  362314380
+  ModelVersionFormat	  "1.%<AutoIncrement:146>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -874,7 +874,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [0, 31, 1806, 951]
+    Location		    [0, 31, 1808, 977]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -1334,7 +1334,7 @@ Model {
       rst		      off
       infoeditControl	      "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
       en		      off
-      latency		      "3"
+      latency		      "4"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1343,14 +1343,14 @@ Model {
       sggui_pos		      "20,46,432,391"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,,[ ],[ ]"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,d390c2d8,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 34 34 0 ],[0.77 0."
       "82 0.91 ]);\nplot([0 35 35 0 0 ],[0 0 34 34 0 ]);\npatch([8.1 13.88 17.88 21.88 25.88 17.88 12.1 8.1 ],[21.44 21"
       ".44 25.44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([12.1 17.88 13.88 8.1 12.1 ],[17.44 17.44 21.44 21.4"
       "4 17.44 ],[0.931 0.946 0.973 ]);\npatch([8.1 13.88 17.88 12.1 8.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\n"
       "patch([12.1 25.88 21.88 17.88 13.88 8.1 12.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\n"
       "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{"
-      "-3}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+      "-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
       BlockType		      Reference
@@ -1400,7 +1400,7 @@ Model {
       rst		      off
       infoeditControl	      "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
       en		      off
-      latency		      "3"
+      latency		      "4"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1409,14 +1409,14 @@ Model {
       sggui_pos		      "20,46,432,391"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,,[ ],[ ]"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,d390c2d8,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 34 34 0 ],[0.77 0."
       "82 0.91 ]);\nplot([0 35 35 0 0 ],[0 0 34 34 0 ]);\npatch([8.1 13.88 17.88 21.88 25.88 17.88 12.1 8.1 ],[21.44 21"
       ".44 25.44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([12.1 17.88 13.88 8.1 12.1 ],[17.44 17.44 21.44 21.4"
       "4 17.44 ],[0.931 0.946 0.973 ]);\npatch([8.1 13.88 17.88 12.1 8.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\n"
       "patch([12.1 25.88 21.88 17.88 13.88 8.1 12.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\n"
       "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{"
-      "-3}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+      "-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
       BlockType		      Reference
@@ -1433,7 +1433,7 @@ Model {
       rst		      off
       infoeditControl	      "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
       en		      off
-      latency		      "3"
+      latency		      "4"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1442,14 +1442,14 @@ Model {
       sggui_pos		      "20,46,432,391"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,,[ ],[ ]"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,d390c2d8,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 34 34 0 ],[0.77 0."
       "82 0.91 ]);\nplot([0 35 35 0 0 ],[0 0 34 34 0 ]);\npatch([8.1 13.88 17.88 21.88 25.88 17.88 12.1 8.1 ],[21.44 21"
       ".44 25.44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([12.1 17.88 13.88 8.1 12.1 ],[17.44 17.44 21.44 21.4"
       "4 17.44 ],[0.931 0.946 0.973 ]);\npatch([8.1 13.88 17.88 12.1 8.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\n"
       "patch([12.1 25.88 21.88 17.88 13.88 8.1 12.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\n"
       "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{"
-      "-3}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+      "-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
       BlockType		      Reference
@@ -1565,7 +1565,7 @@ Model {
       rst		      off
       infoeditControl	      "Selection of Reset will increase slice count due to use of real FFs and instead of SRLs"
       en		      off
-      latency		      "3"
+      latency		      "4"
       dbl_ovrd		      off
       reg_retiming	      off
       xl_use_area	      off
@@ -1574,14 +1574,14 @@ Model {
       sggui_pos		      "20,46,432,391"
       block_type	      "delay"
       block_version	      "11.4"
-      sg_icon_stat	      "35,34,1,1,white,blue,0,83e6bb61,right,,[ ],[ ]"
+      sg_icon_stat	      "35,34,1,1,white,blue,0,d390c2d8,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 34 34 0 ],[0.77 0."
       "82 0.91 ]);\nplot([0 35 35 0 0 ],[0 0 34 34 0 ]);\npatch([8.1 13.88 17.88 21.88 25.88 17.88 12.1 8.1 ],[21.44 21"
       ".44 25.44 21.44 25.44 25.44 25.44 21.44 ],[1 1 1 ]);\npatch([12.1 17.88 13.88 8.1 12.1 ],[17.44 17.44 21.44 21.4"
       "4 17.44 ],[0.931 0.946 0.973 ]);\npatch([8.1 13.88 17.88 12.1 8.1 ],[13.44 13.44 17.44 17.44 13.44 ],[1 1 1 ]);\n"
       "patch([12.1 25.88 21.88 17.88 13.88 8.1 12.1 ],[9.44 9.44 13.44 9.44 13.44 13.44 9.44 ],[0.931 0.946 0.973 ]);\n"
       "fprintf('','COMMENT: end icon graphics');\nfprintf('','COMMENT: begin icon text');\n\n\ncolor('black');disp('z^{"
-      "-3}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
+      "-4}','texmode','on');\nfprintf('','COMMENT: end icon text');\n"
     }
     Block {
       BlockType		      Reference
@@ -8399,7 +8399,7 @@ Model {
       optimization_goal	      "Speed"
       dsp48_use		      "Minimal"
       latency_configuration   "Configurable"
-      latency		      "3"
+      latency		      "4"
       has_phase_out	      off
       sclr_pin		      off
       clock_enable	      off
@@ -8408,7 +8408,7 @@ Model {
       channel_pin	      off
       explicit_period	      off
       period		      "1"
-      phase_increment	      "Fixed"
+      phase_increment	      "Streaming"
       output_frequency1	      "0"
       output_frequency2	      "0"
       output_frequency3	      "0"
