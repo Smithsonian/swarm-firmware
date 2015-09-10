@@ -8,7 +8,6 @@ export MLIB_ROOT=$MLIB_DEVEL_PATH
 export MATLAB=$MATLAB_PATH
 source $XILINX_PATH/settings64.sh
 ####### These are some SWARM-specific settings ######
-export CASPER_HW_ROUTES=hw_routes_roach2rev1.mat # User Rev. 1
 export USER_UCF_PATH='./sma_corr/pblocks' # SWARM area groups
 export QDR_MMCM_LOCK_EN=yes # Enable MMCM lock feature for QDR
 export IDCTRL_100=yes # User 100 MHz for IDELAY_CTRL
