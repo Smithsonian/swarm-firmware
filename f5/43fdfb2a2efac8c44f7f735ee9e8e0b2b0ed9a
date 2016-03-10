@@ -1,4 +1,7 @@
 For the -2 speed grade:
 
+map -t 1:
+Timing errors: 127  Score: 33990 (Setup/Max: 33990, Hold: 0)
+
 map -t 3:
 Timing errors: 196  Score: 35610  (Setup/Max: 35610, Hold: 0)
