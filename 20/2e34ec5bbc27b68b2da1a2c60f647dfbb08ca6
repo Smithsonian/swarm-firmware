@@ -8,5 +8,8 @@ With idelay_rdy ignored:
 map -t 1:
 Timing errors: 29  Score: 8447  (Setup/Max: 8447, Hold: 0)
 
+map -t 2:
+Timing errors: 50  Score: 11690  (Setup/Max: 11690, Hold: 0)
+
 map -t 3:
 Timing errors: 14  Score: 4680  (Setup/Max: 4680, Hold: 0)
