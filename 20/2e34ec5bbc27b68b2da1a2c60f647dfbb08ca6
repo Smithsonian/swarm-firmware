@@ -13,3 +13,8 @@ Timing errors: 50  Score: 11690  (Setup/Max: 11690, Hold: 0)
 
 map -t 3:
 Timing errors: 14  Score: 4680  (Setup/Max: 4680, Hold: 0)
+
+With 200 MHz QDR and clk270 read:
+
+map -t 3:
+Timing errors: 299  Score: 343598  (Setup/Max: 343598, Hold: 0)
