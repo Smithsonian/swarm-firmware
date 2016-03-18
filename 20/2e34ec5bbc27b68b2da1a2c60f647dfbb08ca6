@@ -24,3 +24,8 @@ Timing errors: 288  Score: 338447  (Setup/Max: 338447, Hold: 0)
 
 map -t 3:
 Timing errors: 299  Score: 343598  (Setup/Max: 343598, Hold: 0)
+
+Without any QDR area group constraints:
+
+map -t 2:
+Timing errors: 334  Score: 222873  (Setup/Max: 222873, Hold: 0)
