@@ -29,3 +29,6 @@ Timing errors: 160  Score: 31248  (Setup/Max: 31248, Hold: 0)
 
 map -t 10:
 Timing errors: 79  Score: 10774  (Setup/Max: 10774, Hold: 0)
+
+map -t 11:
+Timing errors: 109  Score: 18143  (Setup/Max: 18143, Hold: 0)
