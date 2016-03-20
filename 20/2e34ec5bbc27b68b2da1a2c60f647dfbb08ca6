@@ -32,5 +32,8 @@ Timing errors: 334  Score: 222873  (Setup/Max: 222873, Hold: 0)
 
 Without QDR contraints and clk180 used for reading.
 
+map -t 1:
+Timing errors: 175  Score: 77185  (Setup/Max: 77185, Hold: 0)
+
 map -t 2:
 Timing errors: 169  Score: 80515  (Setup/Max: 80515, Hold: 0)
