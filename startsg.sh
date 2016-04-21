@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ####### User to edit these accordingly ######
 export PLATFORM=lin64
-export MATLAB_PATH=/usr/local/MATLAB/R2013a
+export MATLAB_PATH=/opt/MATLAB/R2012b
 export XILINX_PATH=/opt/Xilinx/14.7/ISE_DS
 export MLIB_DEVEL_PATH=../mlib_devel
 export MLIB_ROOT=$MLIB_DEVEL_PATH
