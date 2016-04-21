@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ####### User to edit these accordingly ######
 export PLATFORM=lin64
 export MATLAB_PATH=/usr/local/MATLAB/R2013a
