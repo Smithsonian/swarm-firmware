@@ -1,12 +1,12 @@
 Model {
   Name			  "cgain_core"
-  Version		  8.1
+  Version		  8.0
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.146"
+    ComputedModelVersion    "1.147"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 31.0, 1808.0, 946.0]
+      Location		      [1362.0, 322.0, 1855.0, 1056.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,9 +55,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1575.0, 777.0]
+	Extents			[1624.0, 909.0]
 	ZoomFactor		[1.0]
-	Offset			[0.0, 25.0]
+	Offset			[-78.476817042606513, -156.86372180451133]
       }
     }
   }
@@ -65,11 +65,11 @@ Model {
   Creator		  "rprimian"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "rprimian"
+  LastModifiedBy	  "ayoung"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Aug 24 10:53:11 2015"
-  RTWModifiedTimeStamp	  362314380
-  ModelVersionFormat	  "1.%<AutoIncrement:146>"
+  LastModifiedDate	  "Wed Sep 20 09:53:39 2017"
+  RTWModifiedTimeStamp	  427802011
+  ModelVersionFormat	  "1.%<AutoIncrement:147>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -163,13 +163,13 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      7
-      Version		      "1.13.0"
+      Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
 	  $ObjectID		  8
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  "8192"
 	  AbsTol		  "auto"
@@ -204,7 +204,7 @@ Model {
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  9
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -236,7 +236,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  10
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    7
@@ -291,7 +291,7 @@ Model {
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  11
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -381,12 +381,11 @@ Model {
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  12
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
 	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
@@ -396,20 +395,17 @@ Model {
 	  ProdEndianess		  "Unspecified"
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
 	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
 	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
@@ -422,7 +418,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  13
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
@@ -437,7 +433,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  14
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -452,7 +448,7 @@ Model {
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  15
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    6
@@ -492,7 +488,6 @@ Model {
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
 	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
 	  IncludeERTFirstTime	  off
@@ -513,7 +508,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      16
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		19
@@ -578,7 +573,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      17
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -636,12 +631,10 @@ Model {
 	      SupportVariableSizeSignals off
 	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
 	      GRTInterface	      on
-	      GenerateAllocFcn	      off
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -844,7 +837,6 @@ Model {
       SystemSampleTime	      "-1"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
-      FunctionInterfaceSpec   "void_void"
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
@@ -874,7 +866,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [0, 31, 1808, 977]
+    Location		    [1362, 322, 3217, 1378]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -907,7 +899,7 @@ Model {
       infoedit		      " System Generator"
       xilinxfamily	      "virtex6"
       part		      "xc6vsx475t"
-      speed		      "-1"
+      speed		      "-2"
       package		      "ff1759"
       synthesis_tool	      "XST"
       clock_wrapper	      "Clock Enables"
@@ -927,7 +919,7 @@ Model {
       deprecated_control      off
       eval_field	      "0"
       has_advanced_control    "0"
-      sggui_pos		      "326,241,464,470"
+      sggui_pos		      "2303, 357, 464, 470"
       block_type	      "sysgen"
       block_version	      "11.4"
       sg_icon_stat	      "51,50,0,0,token,white,0,58c5b5770fe5f7c311f53dbc6e73f0f6,right,,[ ],[ ]"
@@ -1678,7 +1670,7 @@ Model {
       Position		      [35, 398, 90, 432]
       ZOrder		      -20
       ShowName		      off
-      LibraryVersion	      "1.727"
+      LibraryVersion	      "1.726"
       SourceBlock	      "dspsrcs4/Signal From\nWorkspace"
       SourceType	      "Signal From Workspace"
       X			      "sim0"
@@ -1695,7 +1687,7 @@ Model {
       Position		      [115, 278, 170, 312]
       ZOrder		      -21
       ShowName		      off
-      LibraryVersion	      "1.727"
+      LibraryVersion	      "1.726"
       SourceBlock	      "dspsrcs4/Signal From\nWorkspace"
       SourceType	      "Signal From Workspace"
       X			      "phases"
@@ -4597,7 +4589,6 @@ Model {
 	  "t ^ 1) -> round-to-inf\n(X ~| 1) -> round half down\n(X | 1) -> round half up"
 	  Position		  [193, 171]
 	  DropShadow		  on
-	  ZOrder		  -1
 	}
       }
     }
@@ -5133,7 +5124,6 @@ Model {
 	  "t ^ 1) -> round-to-inf\n(X ~| 1) -> round half down\n(X | 1) -> round half up"
 	  Position		  [193, 171]
 	  DropShadow		  on
-	  ZOrder		  -1
 	}
       }
     }
@@ -5669,7 +5659,6 @@ Model {
 	  "t ^ 1) -> round-to-inf\n(X ~| 1) -> round half down\n(X | 1) -> round half up"
 	  Position		  [193, 171]
 	  DropShadow		  on
-	  ZOrder		  -1
 	}
       }
     }
@@ -6205,7 +6194,6 @@ Model {
 	  "t ^ 1) -> round-to-inf\n(X ~| 1) -> round half down\n(X | 1) -> round half up"
 	  Position		  [193, 171]
 	  DropShadow		  on
-	  ZOrder		  -1
 	}
       }
     }
@@ -8970,7 +8958,6 @@ Model {
       Name		      "Since we flipped\ninputs we need to\nconjugate here"
       Position		      [1039, 349]
       DropShadow	      on
-      ZOrder		      -1
     }
   }
 }
@@ -9050,7 +9037,7 @@ MatData {
     "  # %A35  .    .     8    (    !          %    \"     $    &     0         0    !@   &0W:&%C:P  #@   #@    &    \""
     "     0         !0    @    !    !P    $         $     <   !V:7)T97@V  X   !     !@    @    $          4    (     0 "
     "   H    !         !     *    >&,V=G-X-#<U=         X    P    !@    @    $          4    (     0    (    !         "
-    "!   @ M,0  #@   #     &    \"     0         !0    @    !     P    $         $  # &]F9@ .    .     8    (    !     "
+    "!   @ M,@  #@   #     &    \"     0         !0    @    !     P    $         $  # &]F9@ .    .     8    (    !     "
     "     %    \"     $    &     0         0    !@   &9F,3<U.0  #@   $     &    \"     0         !0    @    !    #     "
     "$         $     P    N+V-G86EN7V-O<F4     #@   #@    &    \"     0         !0    @    !    !@    $         $     8"
     "    S+C0Y-C4   X   !     !@    @    $          4    (     0    T    !         !     -    0VQO8VL@16YA8FQE<P    X  "
@@ -9130,7 +9117,7 @@ MatData {
     "     8    (    !          %    \"     $    #     0         0  , 6%-4  X    X    !@    @    $          4    (     0"
     "    8    !         !     &    9#=H86-K   .    .     8    (    !          %    \"     $    '     0         0    !P "
     "  '9I<G1E>#8 #@   $     &    \"     0         !0    @    !    \"@    $         $     H   !X8S9V<W@T-S5T        #@ "
-    "  #     &    \"     0         !0    @    !     @    $         $  \" \"TQ   .    ,     8    (    !          %    \""
+    "  #     &    \"     0         !0    @    !     @    $         $  \" \"TR   .    ,     8    (    !          %    \""
     "     $    #     0         0  , ;V9F  X    X    !@    @    $          4    (     0    8    !         !     &    9F8"
     "Q-S4Y   .    0     8    (    !          %    \"     $    ,     0         0    #    \"XO8V=A:6Y?8V]R90     .    .  "
     "   8    (    !          %    \"     $    &     0         0    !@   #,N-#DV-0  #@   $     &    \"     0         !0 "

@@ -43,8 +43,6 @@ entity fir_core is
 end fir_core;
 
 architecture structural of fir_core is
-
 begin
-
 end structural;
 

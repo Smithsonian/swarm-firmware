@@ -1,12 +1,12 @@
 Model {
   Name			  "fir_core"
-  Version		  8.1
+  Version		  8.0
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.24"
+    ComputedModelVersion    "1.25"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1004.0, 31.0, 691.0, 944.0]
+      Location		      [2525.0, 45.0, 691.0, 944.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -54,7 +54,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[653.0, 775.0]
+	Extents			[653.0, 768.0]
 	ZoomFactor		[1.0]
 	Offset			[-32.0, 1.5078125]
       }
@@ -64,11 +64,11 @@ Model {
   Creator		  "rprimian"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "rprimian"
+  LastModifiedBy	  "ayoung"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Jun 04 14:49:13 2015"
-  RTWModifiedTimeStamp	  355330109
-  ModelVersionFormat	  "1.%<AutoIncrement:24>"
+  LastModifiedDate	  "Wed Sep 20 15:43:26 2017"
+  RTWModifiedTimeStamp	  427823001
+  ModelVersionFormat	  "1.%<AutoIncrement:25>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -162,13 +162,13 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      7
-      Version		      "1.13.0"
+      Version		      "1.12.1"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
 	  $ObjectID		  8
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  StartTime		  "0.0"
 	  StopTime		  "10.0"
 	  AbsTol		  "auto"
@@ -203,7 +203,7 @@ Model {
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  9
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -235,7 +235,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  10
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -291,7 +291,7 @@ Model {
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  11
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -381,12 +381,11 @@ Model {
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  12
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
 	  ProdBitPerLong	  32
-	  ProdBitPerLongLong	  64
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
@@ -396,20 +395,17 @@ Model {
 	  ProdEndianess		  "Unspecified"
 	  ProdWordSize		  32
 	  ProdShiftRightIntArith  on
-	  ProdLongLongMode	  off
 	  ProdHWDeviceType	  "32-bit Generic"
 	  TargetBitPerChar	  8
 	  TargetBitPerShort	  16
 	  TargetBitPerInt	  32
 	  TargetBitPerLong	  32
-	  TargetBitPerLongLong	  64
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
-	  TargetLongLongMode	  off
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
@@ -422,7 +418,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  13
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
@@ -437,7 +433,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  14
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
 	  SFSimEcho		  on
@@ -452,7 +448,7 @@ Model {
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  15
-	  Version		  "1.13.0"
+	  Version		  "1.12.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    7
@@ -493,7 +489,6 @@ Model {
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
 	  CodeProfilingInstrumentation off
-	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
 	  IncludeERTFirstTime	  off
@@ -514,7 +509,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      16
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		21
@@ -581,7 +576,7 @@ Model {
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      17
-	      Version		      "1.13.0"
+	      Version		      "1.12.1"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -639,12 +634,10 @@ Model {
 	      SupportVariableSizeSignals off
 	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
-	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
 	      AutosarCompliant	      off
 	      GRTInterface	      on
-	      GenerateAllocFcn	      off
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -794,7 +787,6 @@ Model {
       SystemSampleTime	      "-1"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
-      FunctionInterfaceSpec   "void_void"
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
@@ -814,7 +806,7 @@ Model {
   }
   System {
     Name		    "fir_core"
-    Location		    [1004, 31, 1695, 975]
+    Location		    [2525, 45, 3216, 989]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -847,7 +839,7 @@ Model {
       infoedit		      " System Generator"
       xilinxfamily	      "virtex6"
       part		      "xc6vsx475t"
-      speed		      "-1"
+      speed		      "-2"
       package		      "ff1759"
       synthesis_tool	      "XST"
       clock_wrapper	      "Clock Enables"
@@ -867,7 +859,7 @@ Model {
       deprecated_control      off
       eval_field	      "0"
       has_advanced_control    "0"
-      sggui_pos		      "290,367,464,470"
+      sggui_pos		      "3348, 402, 464, 470"
       block_type	      "sysgen"
       block_version	      "11.4"
       sg_icon_stat	      "50,50,0,0,token,white,0,58c5b5770fe5f7c311f53dbc6e73f0f6,right,,[ ],[ ]"
@@ -68012,7 +68004,7 @@ MatData {
     "  @    $          4    (     0    ,    !         !   P!84U0 #@   #@    &    \"     0         !0    @    !    !@   "
     " $         $     8   !D-VAA8VL   X    X    !@    @    $          4    (     0    <    !         !     '    =FER=&5"
     "X-@ .    0     8    (    !          %    \"     $    *     0         0    \"@   'AC-G9S>#0W-70        .    ,     8"
-    "    (    !          %    \"     $    \"     0         0  ( +3$   X    P    !@    @    $          4    (     0    ,"
+    "    (    !          %    \"     $    \"     0         0  ( +3(   X    P    !@    @    $          4    (     0    ,"
     "    !         !   P!O9F8 #@   #@    &    \"     0         !0    @    !    !@    $         $     8   !F9C$W-3D   X "
     "  !     !@    @    $          4    (     0    H    !         !     *    +B]F:7)?8V]R90        X    X    !@    @   "
     " $          4    (     0    8    !         !     &    ,RXT.38U   .    0     8    (    !          %    \"     $    "
@@ -68097,7 +68089,7 @@ MatData {
     "  0    ,    !         !   P!84U0 #@   #@    &    \"     0         !0    @    !    !@    $         $     8   !D-VAA"
     "8VL   X    X    !@    @    $          4    (     0    <    !         !     '    =FER=&5X-@ .    0     8    (    ! "
     "         %    \"     $    *     0         0    \"@   'AC-G9S>#0W-70        .    ,     8    (    !          %    \""
-    "     $    \"     0         0  ( +3$   X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 #@"
+    "     $    \"     0         0  ( +3(   X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 #@"
     "   #@    &    \"     0         !0    @    !    !@    $         $     8   !F9C$W-3D   X   !     !@    @    $       "
     "   4    (     0    H    !         !     *    +B]F:7)?8V]R90        X    X    !@    @    $          4    (     0   "
     " 8    !         !     &    ,RXT.38U   .    0     8    (    !          %    \"     $    -     0         0    #0   $"
