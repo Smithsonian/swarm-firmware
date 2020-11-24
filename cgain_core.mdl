@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.147"
+    ComputedModelVersion    "1.148"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -31,7 +31,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1362.0, 322.0, 1855.0, 1056.0]
+      Location		      [0.0, 90.0, 1600.0, 1086.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,7 +55,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1624.0, 909.0]
+	Extents			[1367.0, 896.0]
 	ZoomFactor		[1.0]
 	Offset			[-78.476817042606513, -156.86372180451133]
       }
@@ -65,11 +65,11 @@ Model {
   Creator		  "rprimian"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "ayoung"
+  LastModifiedBy	  "roachzilla"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Sep 20 09:53:39 2017"
-  RTWModifiedTimeStamp	  427802011
-  ModelVersionFormat	  "1.%<AutoIncrement:147>"
+  LastModifiedDate	  "Sun Nov 15 10:15:44 2020"
+  RTWModifiedTimeStamp	  527336112
+  ModelVersionFormat	  "1.%<AutoIncrement:148>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -866,7 +866,7 @@ Model {
   }
   System {
     Name		    "cgain_core"
-    Location		    [1362, 322, 3217, 1378]
+    Location		    [0, 90, 1600, 1176]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -919,7 +919,7 @@ Model {
       deprecated_control      off
       eval_field	      "0"
       has_advanced_control    "0"
-      sggui_pos		      "2303, 357, 464, 470"
+      sggui_pos		      "1100, 357, 464, 470"
       block_type	      "sysgen"
       block_version	      "11.4"
       sg_icon_stat	      "51,50,0,0,token,white,0,58c5b5770fe5f7c311f53dbc6e73f0f6,right,,[ ],[ ]"
@@ -1623,15 +1623,15 @@ Model {
       arith_type	      "Signed  (2's comp)"
       n_bits		      "18"
       bin_pt		      "17"
-      quantization	      "Truncate"
-      overflow		      "Wrap"
+      quantization	      "Round  (unbiased: +/- Inf)"
+      overflow		      "Saturate"
       en		      off
       latency		      "2"
       dbl_ovrd		      off
       xl_use_area	      off
       xl_area		      "[0,0,0,0,0,0,0]"
       has_advanced_control    "0"
-      sggui_pos		      "20,20,484,461"
+      sggui_pos		      "20,24,559,535"
       block_type	      "negate"
       sg_icon_stat	      "35,62,1,1,white,blue,0,d6d3ab9d,right,,[ ],[ ]"
       sg_mask_display	      "fprintf('','COMMENT: begin icon graphics');\npatch([0 35 35 0 0 ],[0 0 62 62 0 ],[0.77 0."
